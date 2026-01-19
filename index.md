@@ -5,15 +5,22 @@ title: Vadim Atlassov - Researcher
 
 # Vadim Atlassov
 
-<p class="bio">
-Researcher at <strong>HCI Lab, Nazarbayev University</strong>, supervised by <strong>Minho Lee</strong>. I develop controllable diffusion models for medical image synthesis with clinical validation.
-</p>
-
-<div class="contact">
-    <a href="mailto:vadim.atlassov@nu.edu.kz">Email</a>
-    <a href="https://github.com/Vadim-ATL">GitHub</a>
-    <a href="https://scholar.google.com">Google Scholar</a>
-    <a href="https://github.com/Vadim-ATL/Vadim-ATL/blob/main/CV.pdf">CV</a>
+<div style="display: flex; gap: 30px; align-items: flex-start;">
+  <div style="flex: 1;">
+    <h1 style="margin-top: 0;">Vadim Atlassov</h1>
+    <p class="bio">
+      Researcher at <strong>HCI Lab, Nazarbayev University</strong>, supervised by <strong>Minho Lee</strong>. I develop controllable diffusion models for medical image synthesis with clinical validation.
+    </p>
+    <div class="contact">
+        <a href="mailto:vadim.atlassov@nu.edu.kz">Email</a>
+        <a href="https://github.com/Vadim-ATL">GitHub</a>
+        <a href="https://scholar.google.com">Scholar</a>
+        <a href="https://github.com/Vadim-ATL/Vadim-ATL/blob/main/CV.pdf">CV</a>
+    </div>
+  </div>
+  <div style="flex-shrink: 0;">
+    <img src="personal_photo.png" alt="Vadim Atlassov" style="width: 150px; height: 150px; border-radius: 50%; object-fit: cover; border: 1px solid #e0e0e0;">
+  </div>
 </div>
 
 ## Research
@@ -46,7 +53,7 @@ I focus on **controllable generation for medical imaging**, specifically develop
     </div>
 </div>
 
-## Open Source
+## Projects
 
 <div class="project">
     <div class="project-title"><a href="https://github.com/Vadim-ATL/controllable-medical-diffusion">controllable-medical-diffusion</a></div>
