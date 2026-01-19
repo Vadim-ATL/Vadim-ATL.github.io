@@ -25,9 +25,8 @@ author:
       url: "https://github.com/Vadim-ATL/CV.pdf"
 
 plugins:
-  - jekyll-remote-theme
-  - jekyll-include-cache
-
+  - jekyll-feed
+  
 defaults:
   - scope:
       path: ""
