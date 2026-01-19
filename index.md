@@ -7,7 +7,7 @@ title: Vadim Atlassov - Researcher
   <div style="flex: 1;">
     <h1 style="margin-top: 0;">Vadim Atlassov</h1>
     <p class="bio">
-      Researcher at <strong>HCI Lab, Nazarbayev University</strong>, supervised by my Professor<strong><a href="https://scholar.google.com/citations?user=ipi5AVsAAAAJ&hl=ko">Minho Lee</a>
+      Researcher at <strong>HCI Lab, Nazarbayev University</strong>, supervised by my Professor <strong><a href="https://scholar.google.com/citations?user=ipi5AVsAAAAJ&hl=ko">Minho Lee</a>
 </strong>. I develop controllable diffusion models for medical image synthesis with clinical validation.
     </p>
     <div class="contact">
