@@ -12,8 +12,8 @@ Researcher at <strong>HCI Lab, Nazarbayev University</strong>, supervised by <st
 <div class="contact">
     <a href="mailto:vadim.atlassov@nu.edu.kz">Email</a>
     <a href="https://github.com/Vadim-ATL">GitHub</a>
-    <a href="https://scholar.google.com/citations?user=ipi5AVsAAAAJ">Google Scholar</a>
-    <a href="CV.pdf">CV (PDF)</a>
+    <a href="https://scholar.google.com">Google Scholar</a>
+    <a href="https://github.com/Vadim-ATL/Vadim-ATL/blob/main/CV.pdf">CV</a>
 </div>
 
 ## Research
