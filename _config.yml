@@ -1,15 +1,13 @@
-# THEME SETTINGS (Must use Minimal Mistakes for the sidebar)
-remote_theme: mmistakes/minimal-mistakes
-minimal_mistakes_skin: "default" 
+remote_theme: "mmistakes/minimal-mistakes"
+minimal_mistakes_skin: "contrast"
 locale: "en-US"
 title: "Vadim Atlassov"
 description: "Researcher in Generative Models & Medical AI"
 url: "https://vadim-atl.github.io" 
 
-# SIDEBAR PROFILE (This replaces your manual HTML header)
 author:
   name: "Vadim Atlassov"
-  avatar: "/personal_photo.png" # Make sure this file is in your repo!
+  avatar: "/assets/images/profile.jpg"
   bio: "Researcher at **Nazarbayev University**.<br>Generative Models & Medical AI."
   location: "Astana, Kazakhstan"
   links:
@@ -24,8 +22,20 @@ author:
       url: "https://scholar.google.com/citations?user=ipi5AVsAAAAJ"
     - label: "CV (PDF)"
       icon: "fas fa-fw fa-file-pdf"
-      url: "https://github.com/Vadim-ATL/Vadim-ATL/blob/main/CV.pdf"
+      url: "https://github.com/Vadim-ATL/CV.pdf"
 
 plugins:
   - jekyll-remote-theme
   - jekyll-include-cache
+
+defaults:
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: single
+      author_profile: true
+      read_time: true
+      comments: false
+      share: true
+      related: true
