@@ -1,13 +1,13 @@
 remote_theme: mmistakes/minimal-mistakes
-minimal_mistakes_skin: "air" 
+minimal_mistakes_skin: "air"
 locale: "en-US"
 title: "Vadim Atlassov"
 description: "Researcher in Generative Models & Medical AI"
-url: "https://vadim-atl.github.io" 
+url: "https://vadim-atl.github.io"
 
 author:
   name: "Vadim Atlassov"
-  avatar: "personal_photo.png" 
+  avatar: "/personal_photo.png"
   bio: "Researcher at **Nazarbayev University**.<br>Generative Models & Medical AI."
   location: "Astana, Kazakhstan"
   links:
