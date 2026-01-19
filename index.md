@@ -7,7 +7,7 @@ title: Vadim Atlassov - Researcher
   <div style="flex: 1;">
     <h1 style="margin-top: 0;">Vadim Atlassov</h1>
     <p class="bio">
-      Researcher at <strong>HCI Lab, Nazarbayev University</strong>, supervised by my Professor <strong><a href="https://scholar.google.com/citations?user=ipi5AVsAAAAJ&hl=ko">Minho Lee</a>
+      Researcher at <strong>HCI Lab, Nazarbayev University</strong>, supervised by my Professor <strong><a href="https://scholar.google.com/citations?user=ipi5AVsAAAAJ&hl=ko" style="text-decoration: none; color: inherit;">Minho Lee</a>
 </strong>. I develop controllable diffusion models for medical image synthesis with clinical validation.
     </p>
     <div class="contact">
@@ -23,9 +23,9 @@ title: Vadim Atlassov - Researcher
 
 ## Research {#research}
 
-I focus on **controllable generation for medical imaging**, specifically developing diffusion models that generate realistic medical images conditioned on clinical attributes (text prompts, anatomical coordinates, segmentation masks).
+I work in **Controllable Generation for 2D/3D Medical Imaging**, specifically developing diffusion models that generate samples conditioned on clinical attributes (Text prompts, Anatomical coordinates, Segmentation masks).
 
-**Current interests:** Latent diffusion models, multi-modal conditioning, downstream task validation, and synthetic data generation for rare pathologies.
+**Current interests:** Latent diffusion models, Multi-modal conditioning, Data generation for rare pathologies.
 
 ## Publications & Preprints {#publications}
 
@@ -69,8 +69,8 @@ I focus on **controllable generation for medical imaging**, specifically develop
 
 * **M.Sc. Electrical & Computer Engineering**, Nazarbayev University (2024, GPA 3.21/4.0)
 * Academic exchange: Brno University of Technology, Czech Republic
-* Hands-on experience training large-scale diffusion models (2× RTX 5090 GPUs)
+* Hands-on experience training large-scale image generative models, diffusion and flow matching models
 
 <p style="margin-top: 20px;">
-    <strong>Status:</strong> Seeking PhD positions for <strong>Fall 2027</strong> in generative modeling and medical AI.
+    <strong>Status:</strong> Seeking PhD positions for <strong>Fall 2026</strong> in generative modeling and medical AI.
 </p>
