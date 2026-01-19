@@ -3,8 +3,6 @@ layout: default
 title: Vadim Atlassov - Researcher
 ---
 
-# Vadim Atlassov
-
 <div style="display: flex; gap: 30px; align-items: flex-start;">
   <div style="flex: 1;">
     <h1 style="margin-top: 0;">Vadim Atlassov</h1>
@@ -86,5 +84,5 @@ I focus on **controllable generation for medical imaging**, specifically develop
 * Hands-on experience training large-scale diffusion models (2× RTX 5090 GPUs)
 
 <p style="margin-top: 20px;">
-    <strong>Status:</strong> Seeking PhD positions for <strong>Fall 2027</strong> in generative modeling and medical AI.
+    <strong>Status:</strong> Seeking PhD positions for <strong>Fall 2026</strong> in generative modeling and medical AI.
 </p>
