@@ -2,7 +2,7 @@ title: "Vadim Atlassov - PhD Portfolio"
 description: "Researcher in Generative Models & Medical AI | Controllable Diffusion Models for Medical Imaging"
 baseurl: ""
 url: "https://Vadim-ATL.github.io"
-theme: minimal-mistakes-jekyll
+theme: jekyll-theme-minimal
 
 author:
   name: "Vadim Atlassov"
