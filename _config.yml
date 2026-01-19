@@ -1,15 +1,13 @@
-# THEME SETTINGS
 remote_theme: mmistakes/minimal-mistakes
-minimal_mistakes_skin: "default" # Options: "air", "contrast", "dark", "sunrise"
+minimal_mistakes_skin: "air" 
 locale: "en-US"
 title: "Vadim Atlassov"
 description: "Researcher in Generative Models & Medical AI"
-url: "https://vadim-atl.github.io" # <--- CHANGE THIS TO YOUR URL
+url: "https://vadim-atl.github.io" 
 
-# AUTHOR SIDEBAR (The left side of Minsun's site)
 author:
   name: "Vadim Atlassov"
-  avatar: "/assets/images/profile.png" # We will add this image in Step 4
+  avatar: "/assets/images/profile.png" 
   bio: "Researcher at **Nazarbayev University**.<br>Generative Models & Medical AI."
   location: "Astana, Kazakhstan"
   links:
@@ -26,7 +24,6 @@ author:
       icon: "fas fa-fw fa-file-pdf"
       url: "https://github.com/Vadim-ATL/Vadim-ATL/blob/main/CV.pdf"
 
-# PLUGINS
 plugins:
   - jekyll-remote-theme
   - jekyll-include-cache
