@@ -13,21 +13,20 @@ title: Vadim Atlassov - Researcher
         <a href="mailto:vadim.atlassov@nu.edu.kz">Email</a>
         <a href="https://github.com/Vadim-ATL">GitHub</a>
         <a href="https://scholar.google.com">Scholar</a>
-        <a href="https://github.com/Vadim-ATL/Vadim-ATL/blob/main/CV.pdf">CV</a>
     </div>
   </div>
   <div style="flex-shrink: 0;">
-    <img src="assets/personal_photo.png" alt="Vadim Atlassov" style="width: 150px; height: 150px; border-radius: 50%; object-fit: cover; border: 1px solid #e0e0e0;">
+    <img src="personal_photo.png" alt="Vadim Atlassov" style="width: 150px; height: 150px; border-radius: 50%; object-fit: cover; border: 1px solid #e0e0e0;">
   </div>
 </div>
 
-## Research
+## Research {#research}
 
 I focus on **controllable generation for medical imaging**, specifically developing diffusion models that generate realistic medical images conditioned on clinical attributes (text prompts, anatomical coordinates, segmentation masks).
 
 **Current interests:** Latent diffusion models, multi-modal conditioning, downstream task validation, and synthetic data generation for rare pathologies.
 
-## Publications & Preprints
+## Publications & Preprints {#publications}
 
 <div class="paper">
     <div class="paper-title">Latent-Aligned Diffusion for Controllable Chest X-ray Synthesis</div>
@@ -51,7 +50,7 @@ I focus on **controllable generation for medical imaging**, specifically develop
     </div>
 </div>
 
-## Projects
+## Projects {#projects}
 
 <div class="project">
     <div class="project-title"><a href="https://github.com/Vadim-ATL/controllable-medical-diffusion">controllable-medical-diffusion</a></div>
@@ -84,5 +83,5 @@ I focus on **controllable generation for medical imaging**, specifically develop
 * Hands-on experience training large-scale diffusion models (2× RTX 5090 GPUs)
 
 <p style="margin-top: 20px;">
-    <strong>Status:</strong> Seeking PhD positions for <strong>Fall 2026</strong> in generative modeling and medical AI.
+    <strong>Status:</strong> Seeking PhD positions for <strong>Fall 2027</strong> in generative modeling and medical AI.
 </p>
