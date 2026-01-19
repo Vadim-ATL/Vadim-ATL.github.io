@@ -53,18 +53,6 @@ I focus on **controllable generation for medical imaging**, specifically develop
 ## Projects {#projects}
 
 <div class="project">
-    <div class="project-title"><a href="https://github.com/Vadim-ATL/controllable-medical-diffusion">controllable-medical-diffusion</a></div>
-    <p style="font-size: 14px; margin-top: 5px;">
-        Clean PyTorch implementation of multi-conditional latent diffusion for medical imaging.
-    </p>
-    <div>
-        <span class="tag">PyTorch</span>
-        <span class="tag">Diffusion Models</span>
-        <span class="tag">Medical Imaging</span>
-    </div>
-</div>
-
-<div class="project">
     <div class="project-title"><a href="https://github.com/Vadim-ATL/BloodMNIST-DDPM">BloodMNIST-DDPM</a></div>
     <p style="font-size: 14px; margin-top: 5px;">
         Diffusion model for synthesizing realistic blood cell microscopy images. Generates 8 cell types with clinically accurate morphology.
