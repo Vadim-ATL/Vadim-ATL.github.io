@@ -1,9 +1,0 @@
-main:
-  - title: "About"
-    url: "/"
-  - title: "Publications"
-    url: "/#publications"
-  - title: "Projects"
-    url: "/#open-source"
-  - title: "CV"
-    url: "https://github.com/Vadim-ATL/CV.pdf"

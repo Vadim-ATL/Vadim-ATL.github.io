@@ -1,80 +1,83 @@
 ---
-layout: single
-author_profile: true
-title: "About Me"
-sidebar:
-  nav: "docs"
-header:
-  overlay_color: "#333" # Adds a subtle dark header for contrast
+layout: default
+title: Vadim Atlassov - Researcher
 ---
 
-I am a Researcher at the **HCI Lab**, Nazarbayev University, supervised by **Minho Lee**. 
+# Vadim Atlassov
 
-My work focuses on **Controllable Diffusion Models** for medical image synthesis. I aim to solve data scarcity in healthcare by generating high-fidelity synthetic data conditioned on clinical attributes (text, segmentation masks, and anatomy).
+<p class="bio">
+Researcher at <strong>HCI Lab, Nazarbayev University</strong>, supervised by <strong>Minho Lee</strong>. I develop controllable diffusion models for medical image synthesis with clinical validation.
+</p>
 
-<div class="notice--info">
-  <h4><i class="fas fa-flag"></i> Status Update</h4>
-  I am actively seeking <strong>PhD positions for Fall 2027</strong> in Europe or South Korea.
+<div class="contact">
+    <a href="mailto:vadim.atlassov@nu.edu.kz">Email</a>
+    <a href="https://github.com/Vadim-ATL">GitHub</a>
+    <a href="https://scholar.google.com/citations?user=ipi5AVsAAAAJ">Google Scholar</a>
+    <a href="CV.pdf">CV (PDF)</a>
 </div>
 
-## Research Interests
+## Research
 
-* **Generative AI:** Latent Diffusion Models, GANs, Semantic Alignment.
-* **Medical Imaging:** Chest X-Ray synthesis, Mammography, Histopathology.
-* **Clinical AI:** Synthetic data for rare pathologies, Downstream task validation.
+I focus on **controllable generation for medical imaging**, specifically developing diffusion models that generate realistic medical images conditioned on clinical attributes (text prompts, anatomical coordinates, segmentation masks).
 
----
+**Current interests:** Latent diffusion models, multi-modal conditioning, downstream task validation, and synthetic data generation for rare pathologies.
 
-<a id="publications"></a>
-## Selected Publications
+## Publications & Preprints
 
-**Latent-Aligned Diffusion for Controllable Chest X-ray Synthesis** *Computerized Medical Imaging and Graphics (CMIG), 2025 — Under Review* We propose a latent diffusion model with semantic alignment mechanisms for generating chest X-rays.  
-[<i class="fas fa-file-pdf"></i> Paper (Coming Soon)](#){: .btn .btn--primary .btn--small}
-
-**DenseDiff: Virtual Digital Subtraction of Dense Tissue** *In preparation for MICCAI 2026* A conditional diffusion model for computationally removing dense tissue from mammograms to improve lesion visibility.  
-[<i class="fas fa-code"></i> Code (Coming Soon)](#){: .btn .btn--warning .btn--small}
-
----
-
-<a id="open-source"></a>
-## Open Source Projects
-
-{% capture bloodmnist_text %}
-**BloodMNIST-DDPM** <span style="color:#28a745">⭐ Featured Project</span>  
-
-A Diffusion model for synthesizing realistic blood cell microscopy images. Generates 8 cell types with clinically accurate morphology.
-
-[View on GitHub](https://github.com/Vadim-ATL/BloodMNIST-DDPM){: .btn .btn--success}
-{% endcapture %}
-
-{% capture medical_diff_text %}
-**Controllable Medical Diffusion** Clean PyTorch implementation of multi-conditional latent diffusion for medical imaging. Supports text and mask conditioning.
-
-[View on GitHub](https://github.com/Vadim-ATL){: .btn .btn--info}
-{% endcapture %}
-
-<div class="feature__wrapper">
-  <div class="feature__item">
-    <div class="archive__item">
-      <div class="archive__item-teaser">
-        <img src="https://raw.githubusercontent.com/Vadim-ATL/BloodMNIST-DDPM/main/assets/sample.png" alt="Blood cells" style="width:100%; object-fit: cover;"> </div>
-      <div class="archive__item-body">
-        {{ bloodmnist_text | markdownify }}
-      </div>
+<div class="paper">
+    <div class="paper-title">Latent-Aligned Diffusion for Controllable Chest X-ray Synthesis</div>
+    <div class="paper-venue">Computerized Medical Imaging and Graphics (CMIG), 2025 — Under Review</div>
+    <p style="font-size: 14px; margin-top: 8px;">
+        We propose a latent diffusion model with semantic alignment for generating chest X-rays conditioned on text and masks.
+    </p>
+    <div class="paper-links">
+        <a href="#">Paper (Coming Soon)</a>
     </div>
-  </div>
-  
-  <div class="feature__item">
-     <div class="archive__item-body">
-        {{ medical_diff_text | markdownify }}
-      </div>
-  </div>
 </div>
 
----
+<div class="paper">
+    <div class="paper-title">DenseDiff: Virtual Digital Subtraction of Dense Tissue</div>
+    <div class="paper-venue">In preparation for MICCAI 2026</div>
+    <p style="font-size: 14px; margin-top: 8px;">
+        A conditional diffusion model for computationally removing dense tissue from mammograms to improve lesion visibility.
+    </p>
+    <div class="paper-links">
+        <a href="#">Code (Coming Soon)</a>
+    </div>
+</div>
 
-## Background & Skills
+## Open Source
 
-| **Education** | M.Sc. Electrical & Computer Engineering, Nazarbayev University (2024) |
-| **Languages** | Russian (Native), English (IELTS 7.0), Czech (B2), Kazakh (B2) |
-| **Tech Stack** | PyTorch, Diffusers, MONAI, 2x RTX 5090 Cluster Management |
+<div class="project">
+    <div class="project-title"><a href="https://github.com/Vadim-ATL/controllable-medical-diffusion">controllable-medical-diffusion</a></div>
+    <p style="font-size: 14px; margin-top: 5px;">
+        Clean PyTorch implementation of multi-conditional latent diffusion for medical imaging.
+    </p>
+    <div>
+        <span class="tag">PyTorch</span>
+        <span class="tag">Diffusion Models</span>
+        <span class="tag">Medical Imaging</span>
+    </div>
+</div>
+
+<div class="project">
+    <div class="project-title"><a href="https://github.com/Vadim-ATL/BloodMNIST-DDPM">BloodMNIST-DDPM</a></div>
+    <p style="font-size: 14px; margin-top: 5px;">
+        Diffusion model for synthesizing realistic blood cell microscopy images. Generates 8 cell types with clinically accurate morphology.
+    </p>
+    <div>
+        <span class="tag">Medical Imaging</span>
+        <span class="tag">DDPM</span>
+        <span class="tag">Hematology</span>
+    </div>
+</div>
+
+## Background
+
+* **M.Sc. Electrical & Computer Engineering**, Nazarbayev University (2024, GPA 3.21/4.0)
+* Academic exchange: Brno University of Technology, Czech Republic
+* Hands-on experience training large-scale diffusion models (2× RTX 5090 GPUs)
+
+<p style="margin-top: 20px;">
+    <strong>Status:</strong> Seeking PhD positions for <strong>Fall 2027</strong> in generative modeling and medical AI.
+</p>
