@@ -16,7 +16,7 @@ title: Vadim Atlassov - Researcher
     </div>
   </div>
   <div style="flex-shrink: 0;">
-    <img src="personal_photo.png" alt="Vadim Atlassov" style="width: 150px; height: 150px; border-radius: 50%; object-fit: cover; border: 1px solid #e0e0e0;">
+    <img src="assets/personal_photo.png" alt="Vadim Atlassov" style="width: 150px; height: 150px; border-radius: 50%; object-fit: cover; border: 1px solid #e0e0e0;">
   </div>
 </div>
 
