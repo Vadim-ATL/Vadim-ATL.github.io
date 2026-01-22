@@ -11,6 +11,7 @@ title: Vadim Atlassov - Researcher
 </strong>. I develop controllable diffusion models for medical image synthesis with clinical validation.
     </p>
     <div class="contact">
+        <a href="www.linkedin.com/in/vadim-atlassov">LinkedIn</a>
         <a href="mailto:vadim.atlassov@nu.edu.kz">Email</a>
         <a href="https://github.com/Vadim-ATL">GitHub</a>
         <a href="https://scholar.google.com">Scholar</a>
