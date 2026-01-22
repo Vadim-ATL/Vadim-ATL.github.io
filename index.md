@@ -10,15 +10,15 @@ title: Vadim Atlassov - Researcher
       Researcher at <strong>HCI Lab, Nazarbayev University</strong>, supervised by my Professor <strong><a href="https://scholar.google.com/citations?user=ipi5AVsAAAAJ&hl=ko" style="text-decoration: none; color: inherit;">Minho Lee</a>
 </strong>. I develop controllable diffusion models for medical image synthesis with clinical validation.
     </p>
+      <div style="flex-shrink: 0;">
+    <img src="assets/personal_photo.png" alt="Vadim Atlassov" style="width: 150px; height: 150px; border-radius: 50%; object-fit: cover; border: 1px solid #e0e0e0;">
+  </div>
     <div class="contact">
         <a href="www.linkedin.com/in/vadim-atlassov">LinkedIn</a>
         <a href="mailto:vadim.atlassov@nu.edu.kz">Email</a>
         <a href="https://github.com/Vadim-ATL">GitHub</a>
         <a href="https://scholar.google.com">Scholar</a>
     </div>
-  </div>
-  <div style="flex-shrink: 0;">
-    <img src="assets/personal_photo.png" alt="Vadim Atlassov" style="width: 150px; height: 150px; border-radius: 50%; object-fit: cover; border: 1px solid #e0e0e0;">
   </div>
 </div>
 
