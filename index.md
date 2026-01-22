@@ -12,6 +12,9 @@ title: Vadim Atlassov - Researcher
     <p class="bio">
   Researcher at <strong>HCI Lab, Nazarbayev University</strong>, supervised by <strong><a href="https://scholar.google.com/citations?user=ipi5AVsAAAAJ&hl=ko">Prof. Minho Lee</a></strong>. I build diffusion models that generate <em>diagnostically accurate</em> medical images conditioned on multi-modal clinical inputs (text, segmentation masks, anatomical priors). My work addresses data scarcity in rare pathologies by training on <strong>latent-aligned spatial conditioning</strong> mechanisms validated against radiologist annotations.
 </p>
+<div style="background-color: #f0f8ff; padding: 12px; border-left: 4px solid #0066cc; margin: 15px 0;">
+  <strong>Actively seeking PhD positions for Fall 2026</strong> in medical imaging, generative modeling, and conditional synthesis. Open to collaborations on diffusion models for clinical applications.
+</div>
     <div class="contact">
         <a href="www.linkedin.com/in/vadim-atlassov">LinkedIn</a>
         <a href="mailto:vadim.atlassov@nu.edu.kz">Email</a>
