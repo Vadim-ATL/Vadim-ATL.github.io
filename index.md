@@ -29,8 +29,17 @@ I work in **Controllable Generation for 2D/3D Medical Imaging**, specifically de
 
 ## Publications & Preprints {#publications}
 
-**Latent-Aligned Diffusion for Controllable Chest X-ray Synthesis** *Computerized Medical Imaging and Graphics (CMIG), 2025 — Under Review* We propose a latent diffusion model with semantic alignment mechanisms for generating chest X-rays.  
-[Paper (Coming Soon)](#){: .btn .btn--primary}[Github Repository](https://github.com/nubcico/XrayGen/tree/main){: .btn .btn--secondary}
+<div class="paper">
+    <div class="paper-title">Latent-Aligned Diffusion for Controllable Chest X-ray Synthesis</div>
+    <div class="paper-venue">Computerized Medical Imaging and Graphics (CMIG), 2025 — Under Review</div>
+    <p style="font-size: 14px; margin-top: 8px;">
+        We propose a latent diffusion model with semantic alignment for generating chest X-rays conditioned on text and masks.
+    </p>
+    <div class="paper-links">
+        <a href="#">Paper (Coming Soon)</a>
+        <a class="btn btn-secondary" href="https://github.com/nubcico/XrayGen/tree/main" target="_blank" rel="noopener">GitHub Repo</a>
+    </div>
+</div>
 
 <div class="paper">
     <div class="paper-title">DenseDiff: Virtual Digital Subtraction of Dense Tissue</div>
