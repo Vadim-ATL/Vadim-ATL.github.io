@@ -19,7 +19,7 @@ My research focuses on **controllable generation for medical imaging**, specific
 ## Publications & Preprints
 
 **Latent-Aligned Diffusion for Controllable Chest X-ray Synthesis** *Computerized Medical Imaging and Graphics (CMIG), 2025 — Under Review* We propose a latent diffusion model with semantic alignment mechanisms for generating chest X-rays.  
-[Paper (Coming Soon)](#){: .btn .btn--primary}
+[Paper (Coming Soon)](#){: .btn .btn--primary}[Github Repository](https://github.com/nubcico/XrayGen/tree/main){: .btn .btn--secondary}
 
 **DenseDiff: Virtual Digital Subtraction of Dense Tissue** *In preparation for MICCAI 2026* A conditional diffusion model for computationally removing dense tissue from mammograms to improve lesion visibility.  
 [Code (Coming Soon)](#){: .btn .btn--light}
