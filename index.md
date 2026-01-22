@@ -33,7 +33,7 @@ I work in **Controllable Generation for 2D/3D Medical Imaging**, specifically de
     <div class="paper-title">Latent-Aligned Diffusion for Controllable Chest X-ray Synthesis</div>
     <div class="paper-venue">Computerized Medical Imaging and Graphics (CMIG), 2025 — Under Review</div>
     <p style="font-size: 14px; margin-top: 8px;">
-        We propose a latent diffusion model with semantic alignment for generating chest X-rays conditioned on text and masks.
+      We introduce Latent-Aligned Diffusion (LADiff), a controllable chest X-ray generation framework that integrates semantic and spatial conditioning. The model learns a structured latent space representing organ locations, lesion attributes, and appearance features, which are decoded into spatial maps to guide a diffusion generator.
     </p>
     <div class="paper-links">
         <a href="#">Paper (Coming Soon)</a>
