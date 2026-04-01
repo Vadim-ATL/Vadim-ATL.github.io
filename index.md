@@ -42,19 +42,22 @@ I work in **Controllable Generation for 2D/3D Medical Imaging**, specifically de
   <br><br>
   <strong>Clinical impact:</strong> Generated synthetic data improved downstream pneumonia detection by 4.2% AUC when added to training sets with <500 positive cases.</p>
     <div class="paper-links">
-        <a href="#">Paper (Coming Soon)</a>
-        <a class="btn btn-secondary" href="https://github.com/nubcico/XrayGen/tree/main" target="_blank" rel="noopener">GitHub Repo</a>
+        <a class="btn btn-secondary" href="https://github.com/nubcico/XrayGen/tree/main" target="_blank" rel="noopener">Code</a>
+        <span style="margin: 0 8px;">|</span>
+        <a href="https://drive.google.com/file/d/15GdmNFHsGnfKEw_baX7_C4s7PcGfTG69/view?usp=sharing">Paper (Preprint)</a>
     </div>
 </div>
 
 <div class="paper">
-    <div class="paper-title">DenseDiff: Virtual Digital Subtraction of Dense Tissue</div>
-    <div class="paper-venue">In preparation for MICCAI 2026</div>
+    <div class="paper-title">Controllable Diffusion for RC Beam-Column Joint Failure Diagnosis</div>
+    <div class="paper-venue">Journal of Building Engineering (Under Review)</div>
     <p style="font-size: 14px; margin-top: 8px;">
-        A conditional diffusion model for computationally removing dense tissue from mammograms to improve lesion visibility.
+        A geometry-conditioned diffusion framework for synthesizing realistic structural failure images; introduces Edge-guided Spatial Attention (ESA) to improve downstream classification accuracy to 83.0%.
     </p>
     <div class="paper-links">
-        <a href="#">Code (Coming Soon)</a>
+        <a href="https://github.com/nubcico/GenBeamJoint" target="_blank" rel="noopener">Code</a>
+        <span style="margin: 0 8px;">|</span>
+        <a href="https://drive.google.com/file/d/1GpUAm8dhRuAxDzlUNANdaiV1kBqmBDmX/view?usp=sharing">Paper (Preprint)</a>
     </div>
 </div>
 
