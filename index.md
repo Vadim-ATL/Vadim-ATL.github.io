@@ -10,9 +10,12 @@ title: Vadim Atlassov - Researcher
   <div style="flex: 1;">
     <h1 style="margin-top: 0;">Vadim Atlassov</h1>
     <p class="bio">
-  Researcher at <strong>HCI Lab, Nazarbayev University</strong>, supervised by <strong><a href="https://scholar.google.com/citations?user=ipi5AVsAAAAJ&hl=ko">Prof. Minho Lee</a></strong>. I build controllable generative models for <strong>medical imaging</strong> and <strong>structural health monitoring</strong>, with a focus on physically grounded conditioning that preserves domain constraints.
+  Researcher at <strong>HCI Lab, Nazarbayev University</strong>, supervised by <strong><a href="https://scholar.google.com/citations?user=ipi5AVsAAAAJ&hl=ko">Prof. Minho Lee</a></strong>. I build controllable generative models for <strong>medical imaging</strong> and <strong>structural health monitoring</strong>.
 </p>
-<div style="background-color: #f0f8ff; padding: 12px; border-left: 4px solid #0066cc; margin: 15px 0;">
+<p style="margin-top: 6px; margin-bottom: 8px; font-size: 14px;">
+  <strong>M.Sc. Electrical & Computer Engineering</strong>, Nazarbayev University (2024, GPA 3.21/4.0)
+</p>
+<div style="background-color:hsl(208, 100.00%, 97.10%); padding: 12px; border-left: 4px solid #0066cc; margin: 15px 0;">
   <strong>Actively seeking PhD positions for Fall 2026</strong> in medical imaging, generative modeling, and conditional synthesis. Open to collaborations on diffusion models for clinical applications.
 </div>
     <div class="contact">
@@ -26,10 +29,12 @@ title: Vadim Atlassov - Researcher
 
 ## Research {#research}
 
-I develop efficient, controllable generative AI for high-stakes domains (medicine and civil infrastructure). My recent work centers on <strong>physically grounded conditioning</strong> (e.g., <strong>ESA</strong>, <strong>SG-MoE-EA</strong>) so generated outputs remain consistent with rigid anatomical and engineering constraints.
+<p style="margin-bottom: 6px;"><strong>Focus:</strong> Controllable generative AI for chest X-ray synthesis and RC joint failure analysis.</p>
+<p style="margin: 6px 0;"><strong>Method:</strong> Physically grounded conditioning with <strong>ESA</strong> and <strong>SG-MoE-EA</strong>.</p>
+<p style="margin-top: 6px;"><strong>Goal:</strong> Improve downstream diagnosis/classification under limited real data.</p>
 
 <div style="background-color: #f8f9fb; padding: 12px; border-left: 4px solid #111827; margin: 15px 0;">
-  <strong>Selected impact:</strong> +17.5% absolute diagnostic accuracy gain in chest X-ray classification (69.0% -> 86.5%) and +11.9% gain in rebar exposure detection (83.3% -> 95.2%) with synthetic-data augmentation.
+  <strong>Measured impact:</strong> CXR diagnosis <strong>69.0% -> 86.5%</strong> (<strong>+17.5%</strong>) and rebar exposure detection <strong>83.3% -> 95.2%</strong> (<strong>+11.9%</strong>) with synthetic-data augmentation.
 </div>
 
 ## Publications & Preprints {#publications}
@@ -40,7 +45,9 @@ I develop efficient, controllable generative AI for high-stakes domains (medicin
     <p style="font-size: 14px; margin-top: 8px;">
   A latent-aligned diffusion framework for controllable CXR generation from multimodal priors.
   <br><br>
-  <strong>Metrics:</strong> FID <strong>56.78</strong>, Dice <strong>0.6536</strong>, MS-SSIM <strong>0.3298</strong>. Trained on MIMIC-CXR (<strong>218,131</strong> frontal-view images, 80/10/10 split) at <strong>512x512</strong> resolution.
+  <strong>Core metrics:</strong> FID <strong>56.78</strong> | Dice <strong>0.6536</strong> | MS-SSIM <strong>0.3298</strong>.
+  <br><br>
+  <strong>Data:</strong> MIMIC-CXR, <strong>218,131</strong> frontal-view images (80/10/10 split), <strong>512x512</strong>.
   <br><br>
   <strong>Clinical impact:</strong> Synthetic augmentation improves diagnostic classification from <strong>69.0%</strong> to <strong>86.5%</strong> (<strong>+17.5%</strong> absolute).</p>
     <div class="paper-links">
@@ -96,7 +103,6 @@ I develop efficient, controllable generative AI for high-stakes domains (medicin
 
 ## Background
 
-* **M.Sc. Electrical & Computer Engineering**, Nazarbayev University (2024, GPA 3.21/4.0)
 * Academic exchange: Brno University of Technology, Czech Republic
 * Hands-on experience training large-scale image generative models, diffusion and flow matching models
 
