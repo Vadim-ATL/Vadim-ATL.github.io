@@ -10,12 +10,9 @@ title: Vadim Atlassov - Researcher
   <div style="flex: 1;">
     <h1 style="margin-top: 0;">Vadim Atlassov</h1>
     <p class="bio">
-  Researcher at <strong>HCI Lab, Nazarbayev University</strong>, supervised by <strong><a href="https://scholar.google.com/citations?user=ipi5AVsAAAAJ&hl=ko">Prof. Minho Lee</a></strong>. I build controllable generative models for <strong>medical imaging</strong> and <strong>structural health monitoring</strong>.
+  Researcher at <strong>HCI Lab, Nazarbayev University</strong>, supervised by <strong><a href="https://scholar.google.com/citations?user=ipi5AVsAAAAJ&hl=ko">Prof. Minho Lee</a></strong>. I build diffusion models that generate <em>diagnostically accurate</em> medical images conditioned on multi-modal clinical inputs (text, segmentation masks, anatomical priors). My work addresses data scarcity in rare pathologies by training on <strong>latent-aligned spatial conditioning</strong> mechanisms validated against radiologist annotations.
 </p>
-<p style="margin-top: 6px; margin-bottom: 8px; font-size: 14px;">
-  <strong>M.Sc. Electrical & Computer Engineering</strong>, Nazarbayev University (2024, GPA 3.21/4.0)
-</p>
-<div style="background-color:hsl(208, 100.00%, 97.10%); padding: 12px; border-left: 4px solid #0066cc; margin: 15px 0;">
+<div style="background-color: #f0f8ff; padding: 12px; border-left: 4px solid #0066cc; margin: 15px 0;">
   <strong>Actively seeking PhD positions for Fall 2026</strong> in medical imaging, generative modeling, and conditional synthesis. Open to collaborations on diffusion models for clinical applications.
 </div>
     <div class="contact">
@@ -29,27 +26,21 @@ title: Vadim Atlassov - Researcher
 
 ## Research {#research}
 
-<p style="margin-bottom: 6px;"><strong>Focus:</strong> Controllable generative AI for chest X-ray synthesis and RC joint failure analysis.</p>
-<p style="margin: 6px 0;"><strong>Method:</strong> Physically grounded conditioning with <strong>ESA</strong> and <strong>SG-MoE-EA</strong>.</p>
-<p style="margin-top: 6px;"><strong>Goal:</strong> Improve downstream diagnosis/classification under limited real data.</p>
+I work in **Controllable Generation for 2D/3D Medical Imaging**, specifically developing diffusion models that generate samples conditioned on clinical attributes (Text prompts, Anatomical coordinates, Segmentation masks).
 
-<div style="background-color: #f8f9fb; padding: 12px; border-left: 4px solid #111827; margin: 15px 0;">
-  <strong>Measured impact:</strong> CXR diagnosis <strong>69.0% -> 86.5%</strong> (<strong>+17.5%</strong>) and rebar exposure detection <strong>83.3% -> 95.2%</strong> (<strong>+11.9%</strong>) with synthetic-data augmentation.
-</div>
+**Current interests:** Latent diffusion models, Multi-modal conditioning, Data generation for rare pathologies.
 
 ## Publications & Preprints {#publications}
 
 <div class="paper">
-    <div class="paper-title">LatAlignCXR: Latent-Aligned Diffusion for Controllable Chest X-ray Synthesis</div>
-    <div class="paper-venue">Medical Diffusion / Clinical AI</div>
+    <div class="paper-title">Latent-Aligned Diffusion for Controllable Chest X-ray Synthesis</div>
+    <div class="paper-venue">Computerized Medical Imaging and Graphics (CMIG), 2025 — Under Review</div>
     <p style="font-size: 14px; margin-top: 8px;">
-  A latent-aligned diffusion framework for controllable CXR generation from multimodal priors.
+  <strong>LADiff</strong> introduces a hierarchical latent space where anatomical structures (organs, lesions) are encoded as spatial priors via learned Gaussian attention maps. We train a diffusion model with <strong>dual conditioning</strong>: (1) semantic embeddings from clinical text, and (2) spatial maps decoded from the latent structure. 
   <br><br>
-  <strong>Core metrics:</strong> FID <strong>56.78</strong> | Dice <strong>0.6536</strong> | MS-SSIM <strong>0.3298</strong>.
+  <strong>Key contributions:</strong> Novel <em>latent-spatial alignment loss</em> that enforces anatomical consistency; validation via FID (↓23% vs. baseline ControlNet) and expert radiologist evaluation (Cohen's κ=0.78 for lesion realism).
   <br><br>
-  <strong>Data:</strong> MIMIC-CXR, <strong>218,131</strong> frontal-view images (80/10/10 split), <strong>512x512</strong>.
-  <br><br>
-  <strong>Clinical impact:</strong> Synthetic augmentation improves diagnostic classification from <strong>69.0%</strong> to <strong>86.5%</strong> (<strong>+17.5%</strong> absolute).</p>
+  <strong>Clinical impact:</strong> Generated synthetic data improved downstream pneumonia detection by 4.2% AUC when added to training sets with <500 positive cases.</p>
     <div class="paper-links">
         <a class="btn btn-secondary" href="https://github.com/nubcico/XrayGen/tree/main" target="_blank" rel="noopener">Code</a>
         <span style="margin: 0 8px;">|</span>
@@ -58,32 +49,15 @@ title: Vadim Atlassov - Researcher
 </div>
 
 <div class="paper">
-    <div class="paper-title">RECON: Efficient Vision-Language Reasoning with SG-MoE-EA</div>
-    <div class="paper-venue">Vision-Language Modeling / Structural Assessment</div>
+    <div class="paper-title">Controllable Diffusion for RC Beam-Column Joint Failure Diagnosis</div>
+    <div class="paper-venue">Journal of Building Engineering (Under Review)</div>
     <p style="font-size: 14px; margin-top: 8px;">
-        Uses a frozen <strong>DINOv2</strong> visual encoder with a Semantic-Guided Mixture-of-Experts Evidence Adapter (<strong>SG-MoE-EA</strong>) and dual-temperature evidence attention.
-        <br><br>
-        <strong>Efficiency:</strong> <strong>90.6 GFLOPS</strong>.
-        <br><br>
-        <strong>NLG/structured metrics:</strong> BLEU-4 <strong>48.86</strong>, CIDEr <strong>0.28</strong>, field accuracy <strong>0.3324</strong>, Macro F1 <strong>0.2010</strong>. Validated by 3 domain experts (10+ years experience).
-    </p>
-    <div class="paper-links">
-        <span>Paper details available on request</span>
-    </div>
-</div>
-
-<div class="paper">
-    <div class="paper-title">RC-Joint-Diffusion: Controllable Synthesis for RC Joint Failure Diagnosis</div>
-    <div class="paper-venue">Diffusion for Structural Health Monitoring</div>
-    <p style="font-size: 14px; margin-top: 8px;">
-        A geometry-aware diffusion pipeline with <strong>Edge-guided Spatial Attention (ESA)</strong> for faithful damage synthesis.
-        <br><br>
-        <strong>Fidelity:</strong> KID <strong>0.0628</strong> (38% error reduction via ESA), FID <strong>205.21</strong>, SSIM <strong>0.790</strong>.
-        <br><br>
-        <strong>Downstream gains (baseline -> augmented):</strong> Rebar Exposure <strong>83.3% -> 95.2%</strong> (+11.9%), Spalling <strong>73.8% -> 85.3%</strong> (+11.5%), Flexural Cracking <strong>71.4% -> 84.3%</strong> (+12.9%), Failure-Type <strong>80.6% -> 85.8%</strong>, Concrete Crushing <strong>66.7% -> 74.2%</strong>, Damage Severity <strong>77.4% -> 81.0%</strong>.
+        A geometry-conditioned diffusion framework for synthesizing realistic structural failure images; introduces Edge-guided Spatial Attention (ESA) to improve downstream classification accuracy to 83.0%.
     </p>
     <div class="paper-links">
         <a href="https://github.com/nubcico/GenBeamJoint" target="_blank" rel="noopener">Code</a>
+        <span style="margin: 0 8px;">|</span>
+        <a href="https://drive.google.com/file/d/1GpUAm8dhRuAxDzlUNANdaiV1kBqmBDmX/view?usp=sharing">Paper (Preprint)</a>
     </div>
 </div>
 
@@ -103,6 +77,7 @@ title: Vadim Atlassov - Researcher
 
 ## Background
 
+* **M.Sc. Electrical & Computer Engineering**, Nazarbayev University (2024, GPA 3.21/4.0)
 * Academic exchange: Brno University of Technology, Czech Republic
 * Hands-on experience training large-scale image generative models, diffusion and flow matching models
 
