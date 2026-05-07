@@ -24,7 +24,6 @@ title: Vadim Atlassov - Researcher
         <li><strong>Domain Applications:</strong> Medical Imaging (Chest X-ray, Hematology), AI in Structural Engineering Monitoring (RC Beam Failure Diagnosis).</li>
       </ul>
     </div>
-
     <div class="contact">
       <a href="https://www.linkedin.com/in/vadim-atlassov">LinkedIn</a>
       <a href="mailto:vadim.atlassov@nu.edu.kz">Email</a>
