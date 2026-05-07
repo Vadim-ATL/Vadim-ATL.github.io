@@ -5,12 +5,36 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{{ page.title }}</title>
     <link rel="icon" type="image/png" href="assets/icon.svg">
+    <link rel="stylesheet" href="assets/css/custom.css">
     <style>
         * { margin: 0; padding: 0; box-sizing: border-box; }
+        :root {
+            --bg: #ffffff;
+            --text: #333333;
+            --text-muted: #666666;
+            --text-nav: #555555;
+            --border: #eeeeee;
+            --link: #0066cc;
+            --panel: #f9f9f9;
+            --tag-bg: #e8e8e8;
+            --toggle-bg: #ffffff;
+        }
+        html[data-theme="dark"] {
+            --bg: #0f1115;
+            --text: #e6e6e6;
+            --text-muted: #b8c0cc;
+            --text-nav: #cfd6e1;
+            --border: #2a3340;
+            --link: #7fb3ff;
+            --panel: #171c24;
+            --tag-bg: #2a3340;
+            --toggle-bg: #171c24;
+        }
         body {
             font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
             line-height: 1.6;
-            color: #333;
+            color: var(--text);
+            background: var(--bg);
             max-width: 800px;
             margin: 0 auto;
             padding: 20px 20px 40px 20px; /* Adjusted padding */
@@ -20,90 +44,57 @@
         nav {
             margin-bottom: 40px;
             padding-bottom: 15px;
-            border-bottom: 1px solid #eee;
+            border-bottom: 1px solid var(--border);
             display: flex;
             justify-content: flex-end; /* Aligns links to the right */
             gap: 20px;
         }
         nav a {
             text-decoration: none;
-            color: #555;
+            color: var(--text-nav);
             font-size: 15px;
             font-weight: 500;
         }
-        .theme-toggle {
-          position: fixed;
-          top: 14px;
-          right: 14px;
-          z-index: 1000;
-          border: 1px solid #ddd;
-          background: #fff;
-          color: #333;
-          border-radius: 6px;
-          padding: 6px 10px;
-          cursor: pointer;
-        }
-        ul {
-            list-style-type: none;
-        }
         nav a:hover {
-            color: #0066cc;
+            color: var(--link);
         }
         
         h1 { font-size: 32px; margin-bottom: 10px; font-weight: 600; }
-        h2 { font-size: 24px; margin: 40px 0 20px 0; font-weight: 600; border-bottom: 2px solid #eee; padding-bottom: 8px; }
+        h2 { font-size: 24px; margin: 40px 0 20px 0; font-weight: 600; border-bottom: 2px solid var(--border); padding-bottom: 8px; }
         h3 { font-size: 18px; margin: 20px 0 10px 0; font-weight: 600; }
         p { margin-bottom: 15px; }
-        a { color: #0066cc; text-decoration: none; }
+        a { color: var(--link); text-decoration: none; }
         a:hover { text-decoration: underline; }
         
         .contact { margin: 20px 0; font-size: 15px; }
         .contact a { margin-right: 20px; }
         
-        .paper { margin-bottom: 25px; padding: 15px; background: #f9f9f9; border-left: 3px solid #0066cc; }
+        .paper { margin-bottom: 25px; padding: 15px; background: var(--panel); border-left: 3px solid var(--link); }
         .paper-title { font-weight: 600; font-size: 16px; margin-bottom: 5px; }
-        .paper-venue { font-style: italic; color: #666; font-size: 14px; margin-bottom: 5px; }
+        .paper-venue { font-style: italic; color: var(--text-muted); font-size: 14px; margin-bottom: 5px; }
         .paper-links a { margin-right: 15px; font-size: 14px; }
         
         .project { margin-bottom: 20px; }
         .project-title { font-weight: 600; font-size: 16px; }
-        .tag { display: inline-block; background: #e8e8e8; padding: 3px 8px; border-radius: 3px; font-size: 13px; margin-right: 5px; margin-top: 5px; }
+        .tag { display: inline-block; background: var(--tag-bg); padding: 3px 8px; border-radius: 3px; font-size: 13px; margin-right: 5px; margin-top: 5px; color: var(--text); }
         
         .bio { font-size: 16px; line-height: 1.7; margin-bottom: 20px; }
+        .theme-toggle {
+            position: fixed;
+            top: 14px;
+            right: 14px;
+            z-index: 1000;
+            border: 1px solid var(--border);
+            background: var(--toggle-bg);
+            color: var(--text);
+            border-radius: 6px;
+            padding: 6px 10px;
+            cursor: pointer;
+        }
     </style>
-    <script>
-(function () {
-  const saved = localStorage.getItem("theme");
-  const prefersDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
-  const initial = saved || (prefersDark ? "dark" : "light");
-
-  document.documentElement.setAttribute("data-theme", initial);
-
-  const setButtonLabel = () => {
-    const btn = document.getElementById("theme-toggle");
-    if (!btn) return;
-    btn.textContent = document.documentElement.getAttribute("data-theme") === "dark" ? "Day" : "Night";
-  };
-
-  window.addEventListener("DOMContentLoaded", function () {
-    const btn = document.getElementById("theme-toggle");
-    if (!btn) return;
-
-    setButtonLabel();
-
-    btn.addEventListener("click", function () {
-      const current = document.documentElement.getAttribute("data-theme");
-      const next = current === "dark" ? "light" : "dark";
-      document.documentElement.setAttribute("data-theme", next);
-      localStorage.setItem("theme", next);
-      setButtonLabel();
-    });
-  });
-})();
-</script>
 </head>
 <body>
-    <button id="theme-toggle" class="theme-toggle" type="button">Toggle theme</button>
+    <button id="theme-toggle" class="theme-toggle" type="button">Night</button>
     <nav>
         <a href="/">About</a>
         <a href="#research">Research</a>
@@ -113,5 +104,32 @@
     </nav>
 
     {{ content }}
+    <script>
+    (function () {
+      const saved = localStorage.getItem("theme");
+      const prefersDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
+      const initial = saved || (prefersDark ? "dark" : "light");
+      document.documentElement.setAttribute("data-theme", initial);
+
+      const setButtonLabel = () => {
+        const btn = document.getElementById("theme-toggle");
+        if (!btn) return;
+        btn.textContent = document.documentElement.getAttribute("data-theme") === "dark" ? "Day" : "Night";
+      };
+
+      window.addEventListener("DOMContentLoaded", function () {
+        const btn = document.getElementById("theme-toggle");
+        if (!btn) return;
+        setButtonLabel();
+        btn.addEventListener("click", function () {
+          const current = document.documentElement.getAttribute("data-theme");
+          const next = current === "dark" ? "light" : "dark";
+          document.documentElement.setAttribute("data-theme", next);
+          localStorage.setItem("theme", next);
+          setButtonLabel();
+        });
+      });
+    })();
+    </script>
 </body>
 </html>
