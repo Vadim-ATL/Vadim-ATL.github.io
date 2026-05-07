@@ -56,3 +56,22 @@ ul {
 }
 .btn-primary { background: #1a73e8; color: #fff; }
 .btn-primary:hover { background: #1558b0; }
+
+:root {
+  --bg: #ffffff;
+  --text: #111111;
+  --muted: #f0f8ff;
+  --border: #e0e0e0;
+}
+
+html[data-theme="dark"] {
+  --bg: #0f1115;
+  --text: #e8e8e8;
+  --muted: #1a2230;
+  --border: #334155;
+}
+
+body {
+  background: var(--bg);
+  color: var(--text);
+}
