@@ -6,6 +6,10 @@
   margin-bottom: 20px;
   transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
+ul {
+  list-style-type: none;
+}
+
 .card a {
   color: inherit;
   text-decoration: none;
