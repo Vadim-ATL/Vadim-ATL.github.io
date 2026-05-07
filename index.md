@@ -5,7 +5,7 @@ title: Vadim Atlassov - Researcher
 
 <div style="display: flex; gap: 30px; align-items: flex-start;">
   <div style="flex-shrink: 0;">
-    <img src="assets/personal_photo.png" alt="Vadim Atlassov" style="width: 150px; height: 150px; border-radius: 50%; object-fit: cover; border: 1px solid #e0e0e0;">
+    <img src="assets/personal_photo.png" alt="Vadim Atlassov" style="width: 150px; height: 150px; border-radius: 50%; object-fit: cover; border: 1px solid var(--border);">
   </div>
 
   <div style="flex: 1;">
@@ -15,7 +15,7 @@ title: Vadim Atlassov - Researcher
       <strong><a href="https://scholar.google.com/citations?user=ipi5AVsAAAAJ&hl=ko">Prof. Minho Lee</a></strong>.
       I develop <strong>Physically-grounded generative AI</strong> for medicine and civil engineering.
     </p>
-    <div style="background-color: #f0f8ff; padding: 12px; border-left: 4px solid #0066cc; margin: 15px 0;">
+      <div style="background-color: var(--panel); padding: 12px; border-left: 4px solid var(--link); margin: 15px 0;">
       <strong>Looking for PhD position for Fall 2026</strong>
       My research interests includes:
       <ul class="skills-list">
