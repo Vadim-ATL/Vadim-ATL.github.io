@@ -32,11 +32,12 @@ title: Vadim Atlassov - Researcher
   </div>
 </div>
 
-## Research {#research}
 
-I work in **Controllable Generation for 2D/3D Medical Imaging**, specifically developing diffusion models that generate samples conditioned on clinical attributes (Text prompts, Anatomical coordinates, Segmentation masks).
+## Background
 
-**Current interests:** Latent diffusion models, Multi-modal conditioning, Data generation for rare pathologies.
+* **M.Sc. Electrical & Computer Engineering**, Nazarbayev University (2024, GPA 3.21/4.0)
+* Academic exchange: Brno University of Technology, Czech Republic
+* Hands-on experience training large-scale image generative models, diffusion and flow matching models
 
 ## Publications & Preprints {#publications}
 
@@ -83,12 +84,3 @@ I work in **Controllable Generation for 2D/3D Medical Imaging**, specifically de
     </div>
 </div>
 
-## Background
-
-* **M.Sc. Electrical & Computer Engineering**, Nazarbayev University (2024, GPA 3.21/4.0)
-* Academic exchange: Brno University of Technology, Czech Republic
-* Hands-on experience training large-scale image generative models, diffusion and flow matching models
-
-<p style="margin-top: 20px;">
-    <strong>Status:</strong> Seeking PhD positions for <strong>Fall 2026</strong> in generative modeling and medical AI.
-</p>
