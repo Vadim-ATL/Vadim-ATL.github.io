@@ -5,21 +5,44 @@ title: Vadim Atlassov - Researcher
 
 <div style="display: flex; gap: 30px; align-items: flex-start;">
   <div style="flex-shrink: 0;">
-    <img src="assets/personal_photo.png" alt="Vadim Atlassov" style="width: 150px; height: 150px; border-radius: 50%; object-fit: cover; border: 1px solid #e0e0e0;">
+    <img src="assets/icon.svg" alt="Vadim Atlassov" style="width: 150px; height: 150px; border-radius: 50%; object-fit: cover; border: 1px solid #e0e0e0;">
   </div>
+
   <div style="flex: 1;">
     <h1 style="margin-top: 0;">Vadim Atlassov</h1>
     <p class="bio">
-  Researcher at <strong>HCI Lab, Nazarbayev University</strong>, supervised by <strong><a href="https://scholar.google.com/citations?user=ipi5AVsAAAAJ&hl=ko">Prof. Minho Lee</a></strong>. I build diffusion models that generate <em>diagnostically accurate</em> medical images conditioned on multi-modal clinical inputs (text, segmentation masks, anatomical priors). My work addresses data scarcity in rare pathologies by training on <strong>latent-aligned spatial conditioning</strong> mechanisms validated against radiologist annotations.
-</p>
-<div style="background-color: #f0f8ff; padding: 12px; border-left: 4px solid #0066cc; margin: 15px 0;">
-  <strong>Actively seeking PhD positions for Fall 2026</strong> in medical imaging, generative modeling, and conditional synthesis. Open to collaborations on diffusion models for clinical applications.
-</div>
+      I am a MSc Researcher at the <strong>HCI Lab</strong>, Nazarbayev University, supervised by
+      <strong><a href="https://scholar.google.com/citations?user=ipi5AVsAAAAJ&hl=ko">Prof. Minho Lee</a></strong>.
+      I develop <strong>physically-grounded generative AI</strong> for medicine and civil engineering.
+      My works and research interests include:
+    </p>
+
+    <ul style="margin-top: 10px; margin-bottom: 20px; padding-left: 20px; line-height: 1.6;">
+      <li>
+        <strong>Domain-Adapted Generative Models:</strong> Adapting Diffusion and Flow models to respect rigid anatomical and structural constraints (e.g., LatAlignCXR).
+      </li>
+      <li>
+        <strong>Conditional Image Generation:</strong> Designing latent-aligned conditioning and edge-guided attention mechanisms to mitigate extreme data scarcity.
+      </li>
+      <li>
+        <strong>Vision-Language Models (VLMs):</strong> Developing Mixture-of-Experts (MoE) adapters to translate visual data into expert-level diagnostic reporting (e.g., RECON).
+      </li>
+    </ul>
+
+    <div style="background-color: #f0f8ff; padding: 12px; border-left: 4px solid #0066cc; margin: 15px 0;">
+      <strong>Looking for PhD position for Fall 2026</strong>
+      My research interests includes:
+      <ul class="skills-list">
+        <li><strong>Generative AI:</strong> Latent Diffusion (LDM), Flow Matching, Latent Disentanglement, Spatial-Latent Alignment.</li>
+        <li><strong>Multimodal Learning:</strong> Vision-Language Models (VLM), Mixture-of-Experts (MoE) Adapters, DINOv2, Semantic Grounding.</li>
+        <li><strong>Domain Applications:</strong> Medical Imaging (Chest X-ray, Hematology), AI in Structural Engineering Monitoring (RC Beam Failure Diagnosis).</li>
+      </ul>
+    </div>
+
     <div class="contact">
-        <a href="www.linkedin.com/in/vadim-atlassov">LinkedIn</a>
-        <a href="mailto:vadim.atlassov@nu.edu.kz">Email</a>
-        <a href="https://github.com/Vadim-ATL">GitHub</a>
-        <a href="https://scholar.google.com">Scholar</a>
+      <a href="https://www.linkedin.com/in/vadim-atlassov">LinkedIn</a>
+      <a href="mailto:vadim.atlassov@nu.edu.kz">Email</a>
+      <a href="https://github.com/Vadim-ATL">GitHub</a>
     </div>
   </div>
 </div>
