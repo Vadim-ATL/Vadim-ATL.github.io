@@ -5,7 +5,7 @@ title: Vadim Atlassov - Researcher
 
 <div style="display: flex; gap: 30px; align-items: flex-start;">
   <div style="flex-shrink: 0;">
-    <img src="assets/icon.svg" alt="Vadim Atlassov" style="width: 150px; height: 150px; border-radius: 50%; object-fit: cover; border: 1px solid #e0e0e0;">
+    <img src="assets/personal_photo.png" alt="Vadim Atlassov" style="width: 150px; height: 150px; border-radius: 50%; object-fit: cover; border: 1px solid #e0e0e0;">
   </div>
 
   <div style="flex: 1;">
@@ -13,22 +13,8 @@ title: Vadim Atlassov - Researcher
     <p class="bio">
       I am a MSc Researcher at the <strong>HCI Lab</strong>, Nazarbayev University, supervised by
       <strong><a href="https://scholar.google.com/citations?user=ipi5AVsAAAAJ&hl=ko">Prof. Minho Lee</a></strong>.
-      I develop <strong>physically-grounded generative AI</strong> for medicine and civil engineering.
-      My works and research interests include:
+      I develop <strong>Physically-grounded generative AI</strong> for medicine and civil engineering.
     </p>
-
-    <ul style="margin-top: 10px; margin-bottom: 20px; padding-left: 20px; line-height: 1.6;">
-      <li>
-        <strong>Domain-Adapted Generative Models:</strong> Adapting Diffusion and Flow models to respect rigid anatomical and structural constraints (e.g., LatAlignCXR).
-      </li>
-      <li>
-        <strong>Conditional Image Generation:</strong> Designing latent-aligned conditioning and edge-guided attention mechanisms to mitigate extreme data scarcity.
-      </li>
-      <li>
-        <strong>Vision-Language Models (VLMs):</strong> Developing Mixture-of-Experts (MoE) adapters to translate visual data into expert-level diagnostic reporting (e.g., RECON).
-      </li>
-    </ul>
-
     <div style="background-color: #f0f8ff; padding: 12px; border-left: 4px solid #0066cc; margin: 15px 0;">
       <strong>Looking for PhD position for Fall 2026</strong>
       My research interests includes:
