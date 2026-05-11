@@ -1,409 +1,220 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Vadim Atlassov — Researcher</title>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet">
+---
+layout: default
+title: Vadim Atlassov - Researcher
+---
+
 <style>
-  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-
-  :root {
-    --bg: #faf9f7;
-    --ink: #1a1916;
-    --ink-soft: #5a5753;
-    --ink-faint: #9a9793;
-    --rule: #e2e0db;
-    --accent: #2a5caa;
-    --accent-warm: #c0392b;
-    --panel: #f0ede8;
+  .cv-page {
+    font-size: 17px;
+    line-height: 1.6;
+    color: var(--text, #333);
   }
-
-  html { font-size: 17px; }
-
-  body {
-    font-family: 'EB Garamond', Georgia, serif;
-    background: var(--bg);
-    color: var(--ink);
-    line-height: 1.65;
-    min-height: 100vh;
+  
+  .cv-page h1 {
+    font-size: 2.2em;
+    margin: 0 0 8px 0;
+    letter-spacing: -0.02em;
+    font-weight: 700;
   }
-
-  /* ── Layout ── */
-  .shell {
-    max-width: 780px;
-    margin: 0 auto;
-    padding: 0 32px;
+  
+  .cv-page h2 {
+    font-size: 1.4em;
+    margin-top: 40px;
+    margin-bottom: 16px;
+    padding-bottom: 8px;
+    border-bottom: 1px solid var(--border, #eee);
+    letter-spacing: -0.01em;
   }
-
-  /* ── Top bar ── */
-  header {
-    border-bottom: 1px solid var(--rule);
-    padding: 18px 0;
-    margin-bottom: 56px;
-  }
-
-  .nav-row {
+  
+  .cv-page .profile-header {
     display: flex;
-    align-items: center;
-    justify-content: space-between;
+    gap: 32px;
+    align-items: flex-start;
+    margin-bottom: 24px;
+  }
+  
+  .cv-page .profile-photo {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 8px;
+    flex-shrink: 0;
+  }
+  
+  .cv-page .profile-info {
+    flex: 1;
+  }
+  
+  .cv-page .bio {
+    font-size: 1.05em;
+    line-height: 1.6;
+    margin-bottom: 16px;
+  }
+  
+  .cv-page .phd-status {
+    border-left: 3px solid var(--link, #0076df);
+    padding-left: 16px;
+    margin: 20px 0;
+  }
+  
+  .cv-page .skills-list {
+    font-size: 0.95em;
+    margin-top: 8px;
+    padding-left: 20px;
+  }
+  
+  .cv-page .skills-list li {
+    margin-bottom: 6px;
+  }
+  
+  .cv-page .contact {
+    margin-top: 16px;
+    display: flex;
     gap: 16px;
   }
-
-  .nav-name {
-    font-family: 'DM Mono', monospace;
-    font-size: 0.78rem;
-    letter-spacing: 0.08em;
-    text-transform: uppercase;
-    color: var(--ink-soft);
+  
+  .cv-page .contact a {
     text-decoration: none;
-  }
-
-  nav {
-    display: flex;
-    gap: 24px;
-    list-style: none;
-  }
-
-  nav a {
-    font-family: 'DM Mono', monospace;
-    font-size: 0.72rem;
-    letter-spacing: 0.06em;
-    text-transform: uppercase;
-    color: var(--ink-soft);
-    text-decoration: none;
-    transition: color 0.2s;
-  }
-  nav a:hover { color: var(--accent); }
-  nav a.active { color: var(--ink); }
-
-  /* ── Hero ── */
-  .hero {
-    display: grid;
-    grid-template-columns: 140px 1fr;
-    gap: 40px;
-    align-items: start;
-    margin-bottom: 64px;
-    animation: fadeUp 0.6s ease both;
-  }
-
-  @keyframes fadeUp {
-    from { opacity: 0; transform: translateY(18px); }
-    to   { opacity: 1; transform: translateY(0); }
-  }
-
-  .photo {
-    width: 140px;
-    height: 140px;
-    object-fit: cover;
-    border-radius: 4px;
-    display: block;
-    background: var(--panel);
-    border: 1px solid var(--rule);
-  }
-
-  .hero-text h1 {
-    font-size: 2.5rem;
     font-weight: 500;
-    letter-spacing: -0.025em;
-    line-height: 1.15;
-    margin-bottom: 12px;
   }
-
-  .hero-text .role {
-    font-style: italic;
-    color: var(--ink-soft);
-    font-size: 1.05rem;
-    margin-bottom: 20px;
+  
+  .cv-page .contact a:hover {
+    text-decoration: underline;
   }
-
-  .hero-text .role strong {
-    font-style: normal;
-    font-weight: 500;
-    color: var(--ink);
+  
+  .cv-page .paper {
+    margin-bottom: 32px;
+    padding-bottom: 16px;
   }
-
-  .status-bar {
-    border-left: 2px solid var(--accent);
-    padding: 10px 16px;
-    background: var(--panel);
-    font-size: 0.9rem;
-    line-height: 1.55;
-    margin-bottom: 20px;
-    border-radius: 0 3px 3px 0;
-  }
-
-  .status-bar strong {
-    display: block;
-    font-size: 0.8rem;
-    font-family: 'DM Mono', monospace;
-    letter-spacing: 0.05em;
-    text-transform: uppercase;
-    color: var(--accent);
+  
+  .cv-page .paper-title {
+    font-size: 1.15em;
+    font-weight: 700;
     margin-bottom: 4px;
   }
-
-  .contact-links {
-    display: flex;
-    gap: 20px;
-    flex-wrap: wrap;
+  
+  .cv-page .paper-venue {
+    font-size: 0.95em;
+    color: var(--text-muted, #666);
+    margin-bottom: 12px;
+    font-style: italic;
   }
-
-  .contact-links a {
-    font-family: 'DM Mono', monospace;
-    font-size: 0.72rem;
-    letter-spacing: 0.05em;
-    text-transform: uppercase;
-    color: var(--ink-soft);
+  
+  .cv-page .paper p {
+    font-size: 0.95em;
+    margin: 0 0 8px 0;
+  }
+  
+  .cv-page .paper ul {
+    font-size: 0.95em;
+    margin-top: 4px;
+    margin-bottom: 12px;
+    padding-left: 20px;
+  }
+  
+  .cv-page .paper ul li {
+    margin-bottom: 4px;
+  }
+  
+  .cv-page .paper-links {
+    margin-top: 12px;
+    font-size: 0.9em;
+  }
+  
+  .cv-page .paper-links a {
     text-decoration: none;
-    border-bottom: 1px solid var(--rule);
-    padding-bottom: 1px;
-    transition: color 0.2s, border-color 0.2s;
+    font-weight: 500;
   }
-
-  .contact-links a:hover {
-    color: var(--accent);
-    border-color: var(--accent);
+  
+  .cv-page .paper-links a:hover {
+    text-decoration: underline;
   }
-
-  /* ── Section ── */
-  section {
-    margin-bottom: 56px;
-    animation: fadeUp 0.6s ease both;
-    animation-delay: 0.1s;
+  
+  .cv-page .link-separator {
+    color: var(--text-muted, #ccc);
+    margin: 0 8px;
   }
-
-  .section-label {
-    font-family: 'DM Mono', monospace;
-    font-size: 0.7rem;
-    letter-spacing: 0.1em;
-    text-transform: uppercase;
-    color: var(--ink-faint);
-    margin-bottom: 20px;
-    display: flex;
-    align-items: center;
-    gap: 12px;
+  
+  .cv-page .project {
+    margin-bottom: 24px;
   }
-
-  .section-label::after {
-    content: '';
-    flex: 1;
-    height: 1px;
-    background: var(--rule);
+  
+  .cv-page .project-title {
+    font-size: 1.1em;
+    font-weight: 700;
+    margin-bottom: 6px;
   }
-
-  /* ── Research interests ── */
-  .interests-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 12px;
+  
+  .cv-page .project-title a {
+    text-decoration: none;
   }
-
-  .interest-card {
-    border: 1px solid var(--rule);
-    padding: 14px 16px;
+  
+  .cv-page .project-title a:hover {
+    text-decoration: underline;
+  }
+  
+  .cv-page .project p {
+    font-size: 0.95em;
+    margin: 0 0 12px 0;
+  }
+  
+  .cv-page .tag {
+    font-size: 0.8em;
+    color: var(--text-muted, #666);
+    background: var(--panel, #f5f5f5);
+    padding: 3px 8px;
     border-radius: 4px;
-    background: white;
+    margin-right: 6px;
+    display: inline-block;
   }
-
-  .interest-card .ic-label {
-    font-family: 'DM Mono', monospace;
-    font-size: 0.65rem;
-    letter-spacing: 0.07em;
-    text-transform: uppercase;
-    color: var(--ink-faint);
+  
+  .cv-page ul {
+    padding-left: 20px;
+  }
+  
+  .cv-page li {
     margin-bottom: 6px;
   }
 
-  .interest-card .ic-items {
-    font-size: 0.875rem;
-    line-height: 1.55;
-    color: var(--ink-soft);
-  }
-
-  /* ── Education ── */
-  .edu-item {
-    display: grid;
-    grid-template-columns: 100px 1fr;
-    gap: 12px 24px;
-    padding: 14px 0;
-    border-bottom: 1px solid var(--rule);
-    font-size: 0.95rem;
-  }
-
-  .edu-item:last-child { border-bottom: none; }
-
-  .edu-year {
-    font-family: 'DM Mono', monospace;
-    font-size: 0.72rem;
-    color: var(--ink-faint);
-    padding-top: 3px;
-  }
-
-  .edu-title { font-weight: 500; margin-bottom: 3px; }
-  .edu-inst { color: var(--ink-soft); font-style: italic; }
-  .edu-note { font-size: 0.85rem; color: var(--ink-faint); margin-top: 4px; }
-
-  /* ── Publications preview ── */
-  .pub-item {
-    padding: 20px 0;
-    border-bottom: 1px solid var(--rule);
-    display: grid;
-    grid-template-columns: 1fr auto;
-    gap: 16px;
-    align-start: start;
-  }
-
-  .pub-item:last-child { border-bottom: none; }
-
-  .pub-title {
-    font-size: 1.05rem;
-    font-weight: 500;
-    margin-bottom: 4px;
-    line-height: 1.4;
-  }
-
-  .pub-venue {
-    font-size: 0.82rem;
-    font-style: italic;
-    color: var(--ink-soft);
-    margin-bottom: 8px;
-    font-family: 'DM Mono', monospace;
-  }
-
-  .pub-desc {
-    font-size: 0.9rem;
-    color: var(--ink-soft);
-    line-height: 1.6;
-  }
-
-  .pub-links {
-    display: flex;
-    flex-direction: column;
-    gap: 6px;
-    align-items: flex-end;
-    flex-shrink: 0;
-  }
-
-  .btn-link {
-    font-family: 'DM Mono', monospace;
-    font-size: 0.65rem;
-    letter-spacing: 0.06em;
-    text-transform: uppercase;
-    color: var(--accent);
-    text-decoration: none;
-    border: 1px solid var(--accent);
-    padding: 4px 9px;
-    border-radius: 3px;
-    white-space: nowrap;
-    transition: background 0.18s, color 0.18s;
-  }
-
-  .btn-link:hover {
-    background: var(--accent);
-    color: white;
-  }
-
-  /* ── Projects ── */
-  .proj-item {
-    padding: 18px 0;
-    border-bottom: 1px solid var(--rule);
-    display: flex;
-    align-items: flex-start;
-    gap: 20px;
-  }
-
-  .proj-item:last-child { border-bottom: none; }
-
-  .proj-num {
-    font-family: 'DM Mono', monospace;
-    font-size: 0.7rem;
-    color: var(--ink-faint);
-    padding-top: 4px;
-    flex-shrink: 0;
-    width: 24px;
-  }
-
-  .proj-title {
-    font-weight: 500;
-    font-size: 0.98rem;
-    margin-bottom: 4px;
-  }
-
-  .proj-title a { color: var(--ink); text-decoration: none; border-bottom: 1px solid var(--rule); }
-  .proj-title a:hover { border-color: var(--accent); color: var(--accent); }
-
-  .proj-desc { font-size: 0.875rem; color: var(--ink-soft); line-height: 1.55; }
-
-  .tag-row { margin-top: 8px; display: flex; gap: 6px; flex-wrap: wrap; }
-
-  .tag {
-    font-family: 'DM Mono', monospace;
-    font-size: 0.62rem;
-    letter-spacing: 0.04em;
-    color: var(--ink-faint);
-    background: var(--panel);
-    border: 1px solid var(--rule);
-    padding: 2px 7px;
-    border-radius: 2px;
-  }
-
-  /* ── Footer ── */
-  footer {
-    border-top: 1px solid var(--rule);
-    padding: 24px 0 40px;
-    font-family: 'DM Mono', monospace;
-    font-size: 0.68rem;
-    letter-spacing: 0.04em;
-    color: var(--ink-faint);
-    display: flex;
-    justify-content: space-between;
-  }
-
-  /* ── Responsive ── */
   @media (max-width: 600px) {
-    .shell { padding: 0 20px; }
-    .hero { grid-template-columns: 1fr; text-align: center; }
-    .photo { margin: 0 auto; }
-    .contact-links { justify-content: center; }
-    .interests-grid { grid-template-columns: 1fr; }
-    .pub-item { grid-template-columns: 1fr; }
-    .pub-links { flex-direction: row; align-items: center; }
-    footer { flex-direction: column; gap: 6px; }
+    .cv-page .profile-header {
+      flex-direction: column;
+      gap: 16px;
+      align-items: center;
+      text-align: center;
+    }
+    .cv-page .contact {
+      justify-content: center;
+    }
+    .cv-page .phd-status {
+      text-align: left;
+    }
   }
 </style>
-</head>
-<body>
 
-<div class="shell">
-  <header>
-    <div class="nav-row">
-      <a class="nav-name" href="index.html">Vadim Atlassov</a>
-      <nav>
-        <a href="index.html" class="active">CV</a>
-        <a href="pub-xray.html">CXR Paper</a>
-        <a href="pub-beam.html">RC Beam Paper</a>
-        <a href="https://github.com/Vadim-ATL" target="_blank">GitHub ↗</a>
-      </nav>
-    </div>
-  </header>
+<div class="cv-page">
 
-  <!-- Hero -->
-  <div class="hero">
-    <img class="photo" src="assets/personal_photo.png" alt="Vadim Atlassov">
-    <div class="hero-text">
+  <div class="profile-header">
+    <img class="profile-photo" src="assets/personal_photo.png" alt="Vadim Atlassov">
+
+    <div class="profile-info">
       <h1>Vadim Atlassov</h1>
-      <p class="role">MSc Researcher · <strong>HCI Lab, Nazarbayev University</strong><br>
-        Supervised by <strong><a href="https://scholar.google.com/citations?user=ipi5AVsAAAAJ&hl=ko" style="color:inherit;">Prof. Minho Lee</a></strong>
+      <p class="bio">
+        MSc Researcher at the <strong>HCI Lab</strong>, Nazarbayev University, supervised by
+        <strong><a href="https://scholar.google.com/citations?user=ipi5AVsAAAAJ&hl=ko">Prof. Minho Lee</a></strong>.
+        Research focus: <strong>physically-grounded generative AI</strong> for medicine and civil engineering.
       </p>
-      <div class="status-bar">
-        <strong>Seeking PhD positions</strong>
-        Physically-grounded generative AI for medicine and civil engineering.
-        Interests span latent diffusion, flow matching, VLMs, and domain adaptation.
+      
+      <div class="phd-status">
+        <strong>Actively seeking PhD positions.</strong> Research interests include:
+        <ul class="skills-list">
+          <li><strong>Generative AI:</strong> Latent Diffusion (LDM), Flow Matching, Latent Disentanglement, Spatial-Latent Alignment.</li>
+          <li><strong>Multimodal Learning:</strong> Vision-Language Models (VLM), Mixture-of-Experts (MoE) Adapters, DINOv2, Semantic Grounding.</li>
+          <li><strong>Domain Applications:</strong> Medical Imaging (Chest X-ray, Hematology), AI in Structural Engineering Monitoring (RC Beam Failure Diagnosis).</li>
+        </ul>
       </div>
-      <div class="contact-links">
+      
+      <div class="contact">
         <a href="https://www.linkedin.com/in/vadim-atlassov">LinkedIn</a>
         <a href="mailto:vadim.atlassov@nu.edu.kz">Email</a>
         <a href="https://github.com/Vadim-ATL">GitHub</a>
@@ -411,97 +222,72 @@
     </div>
   </div>
 
-  <!-- Research Interests -->
-  <section>
-    <div class="section-label">Research Interests</div>
-    <div class="interests-grid">
-      <div class="interest-card">
-        <div class="ic-label">Generative AI</div>
-        <div class="ic-items">Latent Diffusion, Flow Matching, Latent Disentanglement, Spatial-Latent Alignment</div>
-      </div>
-      <div class="interest-card">
-        <div class="ic-label">Multimodal Learning</div>
-        <div class="ic-items">VLMs, MoE Adapters, DINOv2, Semantic Grounding</div>
-      </div>
-      <div class="interest-card">
-        <div class="ic-label">Domain Applications</div>
-        <div class="ic-items">Medical Imaging, Hematology, Structural Engineering Monitoring</div>
-      </div>
-    </div>
-  </section>
+  <h2 id="education">Education</h2>
 
-  <!-- Education -->
-  <section>
-    <div class="section-label">Education</div>
-    <div class="edu-item">
-      <div class="edu-year">2024</div>
-      <div>
-        <div class="edu-title">M.Sc. in Electrical &amp; Computer Engineering</div>
-        <div class="edu-inst">Nazarbayev University — GPA 3.21/4.0</div>
-        <div class="edu-note">Academic Exchange: Brno University of Technology, Czech Republic</div>
-      </div>
-    </div>
-  </section>
+  <ul>
+    <li><strong>M.Sc. in Electrical &amp; Computer Engineering</strong>, Nazarbayev University (2024; GPA 3.21/4.0)</li>
+    <li><em>Academic Exchange:</em> Brno University of Technology, Czech Republic</li>
+    <li>Hands-on experience training large-scale image generative models, including diffusion and flow matching architectures</li>
+  </ul>
 
-  <!-- Publications -->
-  <section>
-    <div class="section-label">Publications &amp; Preprints</div>
-    <div class="pub-item">
-      <div>
-        <div class="pub-title">Latent-Aligned Diffusion for Controllable Chest X-ray Synthesis</div>
-        <div class="pub-venue">Computerized Medical Imaging and Graphics (CMIG), 2025 — Under Review</div>
-        <div class="pub-desc">
-          FID 56.78 on MIMIC-CXR; DICE 0.6536. Synthetic augmentation improved pneumonia classification by +17.5% accuracy, +4.2% AUC. Radiologist ratings: anatomical plausibility 3.8/5, pathology expression 3.95/5.
-        </div>
-      </div>
-      <div class="pub-links">
-        <a class="btn-link" href="pub-xray.html">Details</a>
-        <a class="btn-link" href="https://github.com/nubcico/XrayGen" target="_blank">Code ↗</a>
-        <a class="btn-link" href="https://drive.google.com/file/d/15GdmNFHsGnfKEw_baX7_C4s7PcGfTG69/view?usp=sharing" target="_blank">PDF ↗</a>
-      </div>
-    </div>
-    <div class="pub-item">
-      <div>
-        <div class="pub-title">Controllable Diffusion for RC Beam-Column Joint Failure Diagnosis</div>
-        <div class="pub-venue">Journal of Building Engineering — Under Review</div>
-        <div class="pub-desc">
-          KID 0.0628, SSIM 0.790. Augmentation gains: failure-type +5.2%, rebar exposure +11.9%, flexural cracking +12.9%, concrete spalling +11.5%. Expert structural realism: 4.12/5.
-        </div>
-      </div>
-      <div class="pub-links">
-        <a class="btn-link" href="pub-beam.html">Details</a>
-        <a class="btn-link" href="https://github.com/nubcico/GenBeamJoint" target="_blank">Code ↗</a>
-        <a class="btn-link" href="https://drive.google.com/file/d/1GpUAm8dhRuAxDzlUNANdaiV1kBqmBDmX/view?usp=sharing" target="_blank">PDF ↗</a>
-      </div>
-    </div>
-  </section>
+  <h2 id="publications">Publications &amp; Preprints</h2>
 
-  <!-- Projects -->
-  <section>
-    <div class="section-label">Projects</div>
-    <div class="proj-item">
-      <div class="proj-num">01</div>
-      <div>
-        <div class="proj-title">
-          <a href="https://github.com/Vadim-ATL/BloodMNIST-DDPM" target="_blank">BloodMNIST-DDPM</a>
-        </div>
-        <div class="proj-desc">
-          Diffusion model for synthesizing realistic blood cell microscopy images. Generates 8 cell types with clinically accurate morphology using denoising diffusion probabilistic models.
-        </div>
-        <div class="tag-row">
-          <span class="tag">Medical Imaging</span>
-          <span class="tag">DDPM</span>
-          <span class="tag">Hematology</span>
-        </div>
-      </div>
+  <div class="paper">
+    <div class="paper-title">Latent-Aligned Diffusion for Controllable Chest X-ray Synthesis</div>
+    <div class="paper-venue">Computerized Medical Imaging and Graphics (CMIG), 2025 — Under Review</div>
+    <p>
+      <strong>Quantitative Results:</strong> On the <a href="https://physionet.org/content/mimic-cxr/2.1.0/" style="color: inherit; text-decoration: none;">MIMIC-CXR</a> dataset, the model achieved a <abbr title="Fréchet Inception Distance">FID</abbr> of 56.78 and a DICE coefficient of lung masks of 0.6536 (anatomical fidelity).
+    </p>
+    <p>
+      <strong>Clinical Utility:</strong> Data augmentation with the model's synthetic images improved downstream diagnostic accuracy by 17.5% and 4.2% AUC for pneumonia classification.
+    </p>
+    <p>
+      <strong>Radiologist Validation:</strong> Board-certified radiologists rated the model highly for anatomical plausibility (3.8/5) and pathology expression (3.95/5), outperforming baselines (Roentgen, Cheff, XReal).
+    </p>
+    <div class="paper-links">
+      <a class="btn btn-secondary" href="https://github.com/nubcico/XrayGen/tree/main" target="_blank" rel="noopener">Code</a>
+      <span class="link-separator">|</span>
+      <a href="https://drive.google.com/file/d/15GdmNFHsGnfKEw_baX7_C4s7PcGfTG69/view?usp=sharing">Paper (Preprint)</a>
     </div>
-  </section>
+  </div>
 
-  <footer>
-    <span>Vadim Atlassov · Nazarbayev University</span>
-    <span>vadim.atlassov@nu.edu.kz</span>
-  </footer>
+  <div class="paper">
+    <div class="paper-title">Controllable Diffusion for RC Beam-Column Joint Failure Diagnosis</div>
+    <div class="paper-venue">Journal of Building Engineering — Under Review</div>
+    <p>
+      <strong>Quantitative Results:</strong> The model demonstrated high fidelity and structural consistency in generating failure states, achieving a <abbr title="Kernel Inception Distance">KID</abbr> of 0.0628 and an <abbr title="Structural Similarity Index">SSIM</abbr> of 0.790.
+    </p>
+    <p>
+      <strong>Diagnostic Accuracy Gains:</strong> Synthetic data augmentation significantly enhanced automated diagnostic performance:
+    </p>
+    <ul style="margin-top: 4px; margin-bottom: 12px;">
+      <li>Failure-Type Classification: <strong>+5.2%</strong> (to 85.8%)</li>
+      <li>Rebar Exposure Detection: <strong>+11.9%</strong> (to 95.2%)</li>
+      <li>Flexural Cracking Detection: <strong>+12.9%</strong> (to 84.3%)</li>
+      <li>Concrete Spalling Detection: <strong>+11.5%</strong> (to 85.3%)</li>
+    </ul>
+    <p>
+      <strong>Expert Validation:</strong> Structural specialists rated the outputs on a 5-point scale — Structural Realism: 4.12/5; Assessment Clarity: 3.98/5.
+    </p>
+    <div class="paper-links">
+      <a href="https://github.com/nubcico/GenBeamJoint" target="_blank" rel="noopener">Code</a>
+      <span class="link-separator">|</span>
+      <a href="https://drive.google.com/file/d/1GpUAm8dhRuAxDzlUNANdaiV1kBqmBDmX/view?usp=sharing">Paper (Preprint)</a>
+    </div>
+  </div>
+
+  <h2 id="projects">Projects</h2>
+
+  <div class="project">
+    <div class="project-title"><a href="https://github.com/Vadim-ATL/BloodMNIST-DDPM">BloodMNIST-DDPM</a></div>
+    <p style="margin-top: 8px;">
+      Diffusion model for synthesizing realistic blood cell microscopy images. Generates 8 cell types with clinically accurate morphology.
+    </p>
+    <div style="margin-top: 12px;">
+      <span class="tag">Medical Imaging</span>
+      <span class="tag">DDPM</span>
+      <span class="tag">Hematology</span>
+    </div>
+  </div>
+
 </div>
-
-</body>
-</html>
