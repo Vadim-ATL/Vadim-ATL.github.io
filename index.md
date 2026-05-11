@@ -16,7 +16,7 @@ title: Vadim Atlassov - Researcher
       I develop <strong>Physically-grounded generative AI</strong> for medicine and civil engineering.
     </p>
       <div style="background-color: var(--panel); padding: 12px; border-left: 4px solid var(--link); margin: 15px 0;">
-      <strong>Looking for PhD position for Fall 2026</strong>
+      <strong>Looking for PhD position!</strong>
       My research interests includes:
       <ul class="skills-list">
         <li><strong>Generative AI:</strong> Latent Diffusion (LDM), Flow Matching, Latent Disentanglement, Spatial-Latent Alignment.</li>
@@ -45,11 +45,23 @@ title: Vadim Atlassov - Researcher
     <div class="paper-title">Latent-Aligned Diffusion for Controllable Chest X-ray Synthesis</div>
     <div class="paper-venue">Computerized Medical Imaging and Graphics (CMIG), 2025 — Under Review</div>
     <p style="font-size: 14px; margin-top: 8px;">
-  <strong>LADiff</strong> introduces a hierarchical latent space where anatomical structures (organs, lesions) are encoded as spatial priors via learned Gaussian attention maps. We train a diffusion model with <strong>dual conditioning</strong>: (1) semantic embeddings from clinical text, and (2) spatial maps decoded from the latent structure. 
+  <section>
+    <p>
+      <strong>Image quantitative Results:</strong> On the <a href="https://physionet.org/content/mimic-cxr/2.1.0/" style="color: inherit; text-decoration: none;">MIMIC-CXR</a>dataset, the model achieved a 
+      <abbr title="Fréchet Inception Distance">FID</abbr> of 56.78 and a DICE coefficient 
+      of lung masks of 0.6536 (for anatomical fidelity).
+    </p>
+    <p>
+      <strong>Clinical Utility:</strong> Data augmentation with model's synthetic images 
+      improved downstream diagnostic accuracy by 17.5% and 4.2% AUC for pneumonia classification.
+    </p>
+    <p>
+      <strong>Radiologist Validation:</strong> Board-certified radiologists rated the model highly 
+      for anatomical plausibility (3.8/5) and pathology expression (3.95/5), outperforming 
+      baselines (Roentgen, Cheff, XReal).
+    </p>
+  </section>
   <br><br>
-  <strong>Key contributions:</strong> Novel <em>latent-spatial alignment loss</em> that enforces anatomical consistency; validation via FID (↓23% vs. baseline ControlNet) and expert radiologist evaluation (Cohen's κ=0.78 for lesion realism).
-  <br><br>
-  <strong>Clinical impact:</strong> Generated synthetic data improved downstream pneumonia detection by 4.2% AUC when added to training sets with <500 positive cases.</p>
     <div class="paper-links">
         <a class="btn btn-secondary" href="https://github.com/nubcico/XrayGen/tree/main" target="_blank" rel="noopener">Code</a>
         <span style="margin: 0 8px;">|</span>
