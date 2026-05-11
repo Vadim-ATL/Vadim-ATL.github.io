@@ -222,13 +222,15 @@ title: Vadim Atlassov - Researcher
     </div>
   </div>
 
-  ## Education {#education}
+  <h2 id="education">Education</h2>
 
-  * **M.Sc. in Electrical & Computer Engineering**, Nazarbayev University (2024; GPA 3.21/4.0)
-  * *Academic Exchange:* Brno University of Technology, Czech Republic
-  * Hands-on experience training large-scale image generative models, including diffusion and flow matching architectures
+  <ul>
+    <li><strong>M.Sc. in Electrical &amp; Computer Engineering</strong>, Nazarbayev University (2024; GPA 3.21/4.0)</li>
+    <li><em>Academic Exchange:</em> Brno University of Technology, Czech Republic</li>
+    <li>Hands-on experience training large-scale image generative models, including diffusion and flow matching architectures</li>
+  </ul>
 
-  ## Publications & Preprints {#publications}
+  <h2 id="publications">Publications &amp; Preprints</h2>
 
   <div class="paper">
     <div class="paper-title">Latent-Aligned Diffusion for Controllable Chest X-ray Synthesis</div>
@@ -274,7 +276,7 @@ title: Vadim Atlassov - Researcher
     </div>
   </div>
 
-  ## Projects {#projects}
+  <h2 id="projects">Projects</h2>
 
   <div class="project">
     <div class="project-title"><a href="https://github.com/Vadim-ATL/BloodMNIST-DDPM">BloodMNIST-DDPM</a></div>
