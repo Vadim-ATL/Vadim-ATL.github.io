@@ -5,7 +5,7 @@ title: Vadim Atlassov - Researcher
 
 <div style="display: flex; gap: 30px; align-items: flex-start;">
   <div style="flex-shrink: 0;">
-    <img src="assets/personal_photo.png" alt="Vadim Atlassov" style="width: 150px; height: 150px; border-radius: 50%; object-fit: cover; border: 1px solid var(--border);">
+    <img src="assets/personal_photo.png" alt="Vadim Atlassov" style="width: 150px; height: 150px; object-fit: cover; border: 1px solid var(--border);">
   </div>
 
   <div style="flex: 1;">
