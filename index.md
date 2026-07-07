@@ -134,6 +134,21 @@ title: Vadim Atlassov - Researcher
     color: var(--text-muted, #ccc);
     margin: 0 8px;
   }
+
+  .cv-page .news-item {
+    display: flex;
+    gap: 16px;
+    margin-bottom: 14px;
+    font-size: 0.95em;
+    align-items: baseline;
+  }
+
+  .cv-page .news-date {
+    min-width: 90px;
+    color: var(--text-muted, #888);
+    font-size: 0.9em;
+    flex-shrink: 0;
+  }
   
   .cv-page .project {
     margin-bottom: 24px;
@@ -210,7 +225,7 @@ title: Vadim Atlassov - Researcher
         <ul class="skills-list">
           <li><strong>Generative AI:</strong> Latent Diffusion (LDM), Flow Matching, Latent Disentanglement, Spatial-Latent Alignment.</li>
           <li><strong>Multimodal Learning:</strong> Vision-Language Models (VLM), Mixture-of-Experts (MoE) Adapters, DINOv2, Semantic Grounding.</li>
-          <li><strong>Domain Applications:</strong> Medical Imaging (Chest X-ray, Hematology), AI in Structural Engineering Monitoring (RC Beam Failure Diagnosis).</li>
+          <li><strong>Domain Applications:</strong> Medical Imaging (Chest X-ray, Mammography), AI for Structural Health Monitoring (RC Beam Failure Diagnosis).</li>
         </ul>
       </div>
       
@@ -223,40 +238,32 @@ title: Vadim Atlassov - Researcher
     </div>
   </div>
 
-  <h2 id="education">Education</h2>
+  <h2 id="news">News</h2>
 
-  <ul>
-    <li><strong>M.Sc. in Electrical &amp; Computer Engineering</strong>, Nazarbayev University (2024; GPA 3.21/4.0)</li>
-    <li><em>Academic Exchange:</em> Brno University of Technology, Czech Republic</li>
-    <li>Hands-on experience training large-scale image generative models, including diffusion and flow matching architectures</li>
-  </ul>
+  <div class="news-item">
+    <span class="news-date">Jun 2026</span>
+    <span>Paper accepted at <strong>Journal of Building Engineering</strong> (Elsevier, IF 7.4, Q1) — controllable diffusion for RC structural failure diagnosis. <a href="https://doi.org/10.1016/j.jobe.2026.116466">DOI</a></span>
+  </div>
+  <div class="news-item">
+    <span class="news-date">2026</span>
+    <span>Benchmark dataset paper on RC beam-column joint failures submitted to <strong>Scientific Data</strong> (Nature Portfolio) — under review.</span>
+  </div>
+  <div class="news-item">
+    <span class="news-date">2025</span>
+    <span>Paper on latent-aligned diffusion for chest X-ray synthesis submitted to <strong>Computerized Medical Imaging and Graphics</strong> — under review.</span>
+  </div>
+  <div class="news-item">
+    <span class="news-date">Apr 2025</span>
+    <span>Joined <strong>HCI Lab, Nazarbayev University</strong> as Research Assistant under Prof. Minho Lee.</span>
+  </div>
 
   <h2 id="publications">Publications &amp; Preprints</h2>
 
   <div class="paper">
-    <div class="paper-title">Latent-Aligned Diffusion for Controllable Chest X-ray Synthesis</div>
-    <div class="paper-venue">Computerized Medical Imaging and Graphics (CMIG), 2025 — Under Review</div>
-    <p>
-      <strong>Quantitative Results:</strong> On the <a href="https://physionet.org/content/mimic-cxr/2.1.0/" style="color: inherit; text-decoration: none;">MIMIC-CXR</a> dataset, the model achieved a <abbr title="Fréchet Inception Distance">FID</abbr> of 56.78 and a DICE coefficient of lung masks of 0.6536 (anatomical fidelity).
-    </p>
-    <p>
-      <strong>Clinical Utility:</strong> Data augmentation with the model's synthetic images improved downstream diagnostic accuracy by 17.5% and 4.2% AUC for pneumonia classification.
-    </p>
-    <p>
-      <strong>Radiologist Validation:</strong> Board-certified radiologists rated the model highly for anatomical plausibility (3.8/5) and pathology expression (3.95/5), outperforming baselines (Roentgen, Cheff, XReal).
-    </p>
-    <div class="paper-links">
-      <a class="btn btn-secondary" href="https://github.com/nubcico/XrayGen/tree/main" target="_blank" rel="noopener">Code</a>
-      <span class="link-separator">|</span>
-      <a href="https://drive.google.com/file/d/15GdmNFHsGnfKEw_baX7_C4s7PcGfTG69/view?usp=sharing">Paper (Preprint)</a>
-    </div>
-  </div>
-
-  <div class="paper">
     <div class="paper-title">Controllable Diffusion-Based Image Generation for Failure Diagnosis of Reinforced Concrete Beam–Column Joints</div>
-    <div class="paper-venue">Journal of Building Engineering, Vol. 128 (2026) 116466 — Elsevier, IF 7.4, Q1</div>
+    <div class="paper-venue">Journal of Building Engineering, Vol. 128 (2026) 116466 — Elsevier, IF 7.4, Q1 — <strong>Accepted</strong></div>
     <p>
-      <strong>Quantitative Results:</strong> The model demonstrated high fidelity and structural consistency in generating failure states, achieving a <abbr title="Kernel Inception Distance">KID</abbr> of 0.0628 and an <abbr title="Structural Similarity Index">SSIM</abbr> of 0.790.
+      <strong>Quantitative Results:</strong> The model demonstrated high fidelity and structural consistency, achieving a <abbr title="Kernel Inception Distance">KID</abbr> of 0.0628 and <abbr title="Structural Similarity Index">SSIM</abbr> of 0.790, outperforming ControlNet, CycleGAN, and Pix2Pix baselines.
     </p>
     <p>
       <strong>Diagnostic Accuracy Gains:</strong> Synthetic data augmentation significantly enhanced automated diagnostic performance:
@@ -268,7 +275,7 @@ title: Vadim Atlassov - Researcher
       <li>Concrete Spalling Detection: <strong>+11.5%</strong> (to 85.3%)</li>
     </ul>
     <p>
-      <strong>Expert Validation:</strong> Structural specialists rated the outputs on a 5-point scale — Structural Realism: 4.12/5; Assessment Clarity: 3.98/5.
+      <strong>Expert Validation:</strong> Structural specialists rated outputs on a 5-point scale — Structural Realism: 4.12/5; Assessment Clarity: 3.98/5.
     </p>
     <div class="paper-links">
       <a href="https://github.com/nubcico/GenBeamJoint" target="_blank" rel="noopener">Code</a>
@@ -276,6 +283,33 @@ title: Vadim Atlassov - Researcher
       <a href="https://doi.org/10.1016/j.jobe.2026.116466" target="_blank" rel="noopener">Paper (DOI)</a>
     </div>
   </div>
+
+  <div class="paper">
+    <div class="paper-title">Latent-Aligned Diffusion for Controllable Chest X-ray Synthesis</div>
+    <div class="paper-venue">Computerized Medical Imaging and Graphics (CMIG), 2025 — Under Review</div>
+    <p>
+      <strong>Quantitative Results:</strong> On the <a href="https://physionet.org/content/mimic-cxr/2.1.0/" style="color: inherit; text-decoration: none;">MIMIC-CXR</a> dataset, the model achieved <abbr title="Fréchet Inception Distance">FID</abbr> 45.38, MS-SSIM 0.736, and Dice 0.6564, outperforming RoentGen, CheXGen, and XReal baselines.
+    </p>
+    <p>
+      <strong>Clinical Utility:</strong> Synthetic augmentation improved downstream pneumonia classification accuracy by 17.5% and AUC by 4.2%.
+    </p>
+    <p>
+      <strong>Radiologist Validation:</strong> Board-certified radiologists rated anatomical plausibility 3.8/5 and pathology expression 3.95/5.
+    </p>
+    <div class="paper-links">
+      <a href="https://github.com/nubcico/XrayGen/tree/main" target="_blank" rel="noopener">Code</a>
+      <span class="link-separator">|</span>
+      <a href="https://drive.google.com/file/d/15GdmNFHsGnfKEw_baX7_C4s7PcGfTG69/view?usp=sharing">Paper (Preprint)</a>
+    </div>
+  </div>
+
+  <h2 id="education">Education</h2>
+
+  <ul>
+    <li><strong>M.Sc. in Electrical &amp; Computer Engineering</strong>, Nazarbayev University (2023; GPA 3.21/4.0) — Graduate Academic Merit Award, Top 10% of cohort</li>
+    <li><strong>B.Eng. in Electrical &amp; Computer Engineering</strong>, East Kazakhstan Technical University (2020; GPA 3.71/4.0) — Magna Cum Laude, Ranked 2nd of cohort, Presidential Scholarship</li>
+    <li><em>Academic Exchange:</em> Brno University of Technology, Czech Republic (2019)</li>
+  </ul>
 
   <h2 id="projects">Projects</h2>
 
