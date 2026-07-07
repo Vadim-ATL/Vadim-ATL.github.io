@@ -377,12 +377,6 @@
       </div>
     </div>
   </div>
-  <h2 id="education">Education</h2>
-  <ul>
-    <li><strong>M.Sc. in Electrical &amp; Computer Engineering</strong>, Nazarbayev University (2023; GPA 3.21/4.0) — Graduate Academic Merit Award, Top 10% of cohort</li>
-    <li><strong>B.Eng. in Electrical &amp; Computer Engineering</strong>, East Kazakhstan Technical University (2020; GPA 3.71/4.0) — Magna Cum Laude, Ranked 2nd of cohort, Presidential Scholarship</li>
-    <li><em>Academic Exchange:</em> Brno University of Technology, Czech Republic (2019)</li>
-  </ul>
   <h2 id="news">News</h2>
   <div class="news-item">
     <span class="news-date">Jun 2026</span>
