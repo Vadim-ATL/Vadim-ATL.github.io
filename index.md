@@ -1,6 +1,3 @@
-
-layout: default
-title: Vadim Atlassov - Researcher
 <style>
   .cv-page {
     font-size: 16px;
