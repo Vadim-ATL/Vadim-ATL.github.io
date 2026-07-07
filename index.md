@@ -301,7 +301,6 @@
 <div class="cv-page">
   <div class="profile-header">
     <img class="profile-photo" src="assets/personal_photo.png" alt="Vadim Atlassov">
-plain
 <div class="profile-info">
   <h1>Vadim Atlassov</h1>
   <p class="bio">
