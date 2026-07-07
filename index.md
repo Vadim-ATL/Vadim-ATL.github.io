@@ -218,6 +218,7 @@ title: Vadim Atlassov - Researcher
         <a href="https://www.linkedin.com/in/vadim-atlassov">LinkedIn</a>
         <a href="mailto:vadim.atlassov@nu.edu.kz">Email</a>
         <a href="https://github.com/Vadim-ATL">GitHub</a>
+        <a href="https://scholar.google.com/citations?hl=ko&user=1IG1kf0AAAAJ">Scholar</a>
       </div>
     </div>
   </div>
@@ -252,8 +253,8 @@ title: Vadim Atlassov - Researcher
   </div>
 
   <div class="paper">
-    <div class="paper-title">Controllable Diffusion for RC Beam-Column Joint Failure Diagnosis</div>
-    <div class="paper-venue">Journal of Building Engineering — Under Review</div>
+    <div class="paper-title">Controllable Diffusion-Based Image Generation for Failure Diagnosis of Reinforced Concrete Beam–Column Joints</div>
+    <div class="paper-venue">Journal of Building Engineering, Vol. 128 (2026) 116466 — Elsevier, IF 7.4, Q1</div>
     <p>
       <strong>Quantitative Results:</strong> The model demonstrated high fidelity and structural consistency in generating failure states, achieving a <abbr title="Kernel Inception Distance">KID</abbr> of 0.0628 and an <abbr title="Structural Similarity Index">SSIM</abbr> of 0.790.
     </p>
@@ -272,7 +273,7 @@ title: Vadim Atlassov - Researcher
     <div class="paper-links">
       <a href="https://github.com/nubcico/GenBeamJoint" target="_blank" rel="noopener">Code</a>
       <span class="link-separator">|</span>
-      <a href="https://drive.google.com/file/d/1GpUAm8dhRuAxDzlUNANdaiV1kBqmBDmX/view?usp=sharing">Paper (Preprint)</a>
+      <a href="https://doi.org/10.1016/j.jobe.2026.116466" target="_blank" rel="noopener">Paper (DOI)</a>
     </div>
   </div>
 
