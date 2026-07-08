@@ -377,6 +377,32 @@
       </div>
     </div>
   </div>
+  <div class="paper">
+    <div style="display: flex; gap: 24px; align-items: flex-start;">
+      <img class="paper-preview" src="assets/rc_bcj_dataset_preview.png" alt="RC-BCJ-Dataset preview">
+      <div style="flex: 1;">
+        <div class="paper-title">RC-BCJ-Dataset: A Benchmark Image Dataset of Reinforced Concrete Beam–Column Joint Failures</div>
+        <div class="paper-venue">Scientific Data (Nature Portfolio), 2026 — Under Review</div>
+        <p>
+          <strong>Dataset Overview:</strong> 572 annotated images of RC beam–column joint failures with expert-verified multi-attribute annotations for structural damage recognition, vision–language modeling, and generative modeling.
+        </p>
+        <p><strong>Annotations:</strong></p>
+        <ul>
+          <li><strong>Categorical labels:</strong> Joint type, failure mechanism (B / J / BJ), damage type, damage severity (DS0–DS4)</li>
+          <li><strong>1,716 expert-written diagnostic descriptions</strong> (3 per image) for image-to-text and multimodal learning</li>
+          <li><strong>Segmentation masks</strong> for background, beam, column, and joint-core regions</li>
+        </ul>
+        <p>
+          <strong>Baseline Results:</strong> Failure-mode classification up to 70.30% accuracy (ViT-B/16); best image-to-text generation (Qwen3-VL-4B): BLEU-4 0.82, BERTScore 0.98.
+        </p>
+        <div class="paper-links">
+          <a href="https://github.com/nubcico/RC-BCJ-Dataset" target="_blank" rel="noopener">Dataset</a>
+          <span class="link-separator">|</span>
+          <a href="https://github.com/nubcico/RC-BCJ-Dataset" target="_blank" rel="noopener">Code</a>
+        </div>
+      </div>
+    </div>
+  </div>
   <h2 id="news">News</h2>
   <div class="news-item">
     <span class="news-date">Jun 2026</span>
