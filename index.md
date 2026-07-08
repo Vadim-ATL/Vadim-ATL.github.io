@@ -371,8 +371,6 @@
         </p>
         <div class="paper-links">
           <a href="https://github.com/nubcico/XrayGen/tree/main" target="_blank" rel="noopener">Code</a>
-          <span class="link-separator">|</span>
-          <a href="https://drive.google.com/file/d/15GdmNFHsGnfKEw_baX7_C4s7PcGfTG69/view?usp=sharing">Paper</a>
         </div>
       </div>
     </div>
@@ -396,7 +394,7 @@
           <strong>Baseline Results:</strong> Failure-mode classification up to 70.30% accuracy (ViT-B/16); best image-to-text generation (Qwen3-VL-4B): BLEU-4 0.82, BERTScore 0.98.
         </p>
         <div class="paper-links">
-          <a href="https://github.com/nubcico/RC-BCJ-Dataset" target="_blank" rel="noopener">Dataset</a>
+          <a href="https://zenodo.org/records/20268086" target="_blank" rel="noopener">Dataset</a>
           <span class="link-separator">|</span>
           <a href="https://github.com/nubcico/RC-BCJ-Dataset" target="_blank" rel="noopener">Code</a>
         </div>
