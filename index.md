@@ -415,6 +415,7 @@
     <span>Paper on latent-aligned diffusion for chest X-ray synthesis submitted to <strong>Computerized Medical Imaging and Graphics</strong> — Under review.</span>
   </div>
   <h2 id="projects">Projects</h2>
+  <div class="project">
     <div style="display: flex; gap: 24px; align-items: flex-start;">
       <img class="paper-preview" src="assets/counterfactual_cxr_preview.png" alt="Counterfactual CXR preview" style="width: 140px; height: 140px;">
       <div style="flex: 1;">
