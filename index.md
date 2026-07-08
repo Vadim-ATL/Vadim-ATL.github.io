@@ -415,15 +415,37 @@
     <span>Paper on latent-aligned diffusion for chest X-ray synthesis submitted to <strong>Computerized Medical Imaging and Graphics</strong> — Under review.</span>
   </div>
   <h2 id="projects">Projects</h2>
+    <div style="display: flex; gap: 24px; align-items: flex-start;">
+      <img class="paper-preview" src="assets/counterfactual_cxr_preview.png" alt="Counterfactual CXR preview" style="width: 140px; height: 140px;">
+      <div style="flex: 1;">
+        <div class="project-title"><a href="https://github.com/Vadim-ATL/Counterfactual-CXR-Generation">Counterfactual Chest X-Ray Generation</a></div>
+        <p style="margin-top: 10px;">
+          Disentangled anatomy and diffusion transformers (SiT) for counterfactual disease trajectory generation in chest X-rays. Simulates realistic progression (Healthy → Sick) and regression (Sick → Healthy) while preserving patient identity via orthogonal spatial latents.
+        </p>
+        <div style="margin-top: 14px;">
+          <span class="tag">Medical Imaging</span>
+          <span class="tag">Diffusion Transformers</span>
+          <span class="tag">Counterfactual</span>
+          <span class="tag">MIMIC-CXR</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
   <div class="project">
-    <div class="project-title"><a href="https://github.com/Vadim-ATL/BloodMNIST-DDPM">BloodMNIST-DDPM</a></div>
-    <p style="margin-top: 10px;">
-      Diffusion model for synthesizing realistic blood cell microscopy images. Generates 8 cell types with clinically accurate morphology.
-    </p>
-    <div style="margin-top: 14px;">
-      <span class="tag">Medical Imaging</span>
-      <span class="tag">DDPM</span>
-      <span class="tag">Hematology</span>
+    <div style="display: flex; gap: 24px; align-items: flex-start;">
+      <img class="paper-preview" src="assets/bloodmnist_preview.png" alt="BloodMNIST preview" style="width: 140px; height: 140px;">
+      <div style="flex: 1;">
+        <div class="project-title"><a href="https://github.com/Vadim-ATL/BloodMNIST-DDPM">BloodMNIST-DDPM</a></div>
+        <p style="margin-top: 10px;">
+          Diffusion model for synthesizing realistic blood cell microscopy images. Generates 8 cell types with clinically accurate morphology.
+        </p>
+        <div style="margin-top: 14px;">
+          <span class="tag">Medical Imaging</span>
+          <span class="tag">DDPM</span>
+          <span class="tag">Hematology</span>
+        </div>
+      </div>
     </div>
   </div>
 </div>
