@@ -327,12 +327,23 @@
 </div>
   </div>
   <h2 id="publications">Publications &amp; Preprints</h2>
-  <div class="paper">
+    <div class="paper">
     <div style="display: flex; gap: 24px; align-items: flex-start;">
       <img class="paper-preview" src="assets/jbe_preview.png" alt="RC joint failure generation preview">
       <div style="flex: 1;">
         <div class="paper-title">Controllable Diffusion-Based Image Generation for Failure Diagnosis of Reinforced Concrete Beam–Column Joints</div>
         <div class="paper-venue">Journal of Building Engineering, Vol. 128 (2026) 116466 — Elsevier, IF 7.4, Q1 — <strong>Accepted</strong></div>
+        <p style="font-size: 0.92em; margin-bottom: 14px; line-height: 1.6; color: var(--text, #1a1a1a);">
+          <strong>Vadim Atlassov</strong><sup>1</sup> <span style="background: #dbeafe; color: #1e40af; font-size: 0.75em; padding: 2px 6px; border-radius: 4px; font-weight: 600; margin-left: 4px;">Lead Author</span>, 
+          Isabella Schlattner<sup>1</sup>, 
+          Yelzhas Omarov<sup>1</sup>, 
+          Hyunjin Ju<sup>2</sup>, 
+          Min-Ho Lee<sup>1</sup>
+          <br>
+          <span style="font-size: 0.82em; color: var(--text-muted, #6b7280); margin-top: 4px; display: inline-block;">
+            <sup>1</sup> Nazarbayev University &nbsp;|&nbsp; <sup>2</sup> Hankyong National University
+          </span>
+        </p>
         <p>
           <strong>Quantitative Results:</strong> The model demonstrated high fidelity and structural consistency, achieving a <abbr title="Kernel Inception Distance">KID</abbr> of 0.0628 and <abbr title="Structural Similarity Index">SSIM</abbr> of 0.790, outperforming ControlNet, CycleGAN, and Pix2Pix baselines.
         </p>
@@ -344,7 +355,7 @@
           <li>Concrete Spalling Detection: <strong>+11.5%</strong> (to 85.3%)</li>
         </ul>
         <p>
-          <strong>Expert Validation:</strong> Structural Realism: 4.12/5; Assessment Clarity: 3.98/5.
+          <strong>Expert Validation:</strong> Structural Realism: 4.12/5 (N=5 structural engineers); Assessment Clarity: 3.98/5.
         </p>
         <div class="paper-links">
           <a href="https://github.com/nubcico/GenBeamJoint" target="_blank" rel="noopener">Code</a>
@@ -354,12 +365,25 @@
       </div>
     </div>
   </div>
-  <div class="paper">
+    <div class="paper">
     <div style="display: flex; gap: 24px; align-items: flex-start;">
       <img class="paper-preview" src="assets/cxr_preview.png" alt="Chest X-ray synthesis preview">
       <div style="flex: 1;">
-        <div class="paper-title">Latent-Aligned Diffusion for Controllable Chest X-ray Synthesis</div>
+        <div class="paper-title">Latent-Aligned Scalable Interpolant Transformer for Controllable Chest X-ray Synthesis</div>
         <div class="paper-venue">Computerized Medical Imaging and Graphics (CMIG), 2025 — Under Review</div>
+          <p style="font-size: 0.92em; margin-bottom: 14px; line-height: 1.6; color: var(--text, #1a1a1a);">
+          Isabella Schlattner<sup>1</sup>, 
+          <strong>Vadim Atlassov</strong><sup>1</sup> <span style="background: #fef3c7; color: #92400e; font-size: 0.75em; padding: 2px 6px; border-radius: 4px; font-weight: 600; margin-left: 4px;">Core Contributor</span>, 
+          Azimzhan Abdrakhmanov<sup>1</sup>, 
+          Minho Lee<sup>1</sup>
+          <br>
+          <span style="font-size: 0.82em; color: var(--text-muted, #6b7280); margin-top: 4px; display: inline-block;">
+            <sup>1</sup> Nazarbayev University
+          </span>
+        </p>
+        <p style="font-size: 0.9em; margin-bottom: 14px; color: var(--text-muted, #4b5563); font-style: italic;">
+          <strong>My Contribution:</strong> Co-designed the Scalable Interpolant Transformer (SiT) architecture, implemented the latent-alignment mechanism, and conducted all MIMIC-CXR training and evaluation experiments.
+        </p>
         <p>
           <strong>Quantitative Results:</strong> On the <a href="https://physionet.org/content/mimic-cxr/2.1.0/" style="color: inherit; text-decoration: none;">MIMIC-CXR</a> dataset, the model achieved <abbr title="Fréchet Inception Distance">FID</abbr> 45.38, MS-SSIM 0.736, and Dice 0.6564, outperforming RoentGen, CheXGen, and XReal baselines.
         </p>
@@ -397,12 +421,27 @@ RC Beam–Column Joints</div>
       </div>
     </div>
   </div>
-  <div class="paper">
+    <div class="paper">
     <div style="display: flex; gap: 24px; align-items: flex-start;">
       <img class="paper-preview" src="assets/rc_bcj_dataset_preview.png" alt="RC-BCJ-Dataset preview">
       <div style="flex: 1;">
         <div class="paper-title">RC-BCJ-Dataset: A Benchmark Image Dataset of Reinforced Concrete Beam–Column Joint Failures</div>
         <div class="paper-venue">Scientific Data (Nature Portfolio), 2026 — Under Review</div>
+          <p style="font-size: 0.92em; margin-bottom: 14px; line-height: 1.6; color: var(--text, #1a1a1a);">
+          Min-Ho Lee<sup>1</sup>, 
+          Azimzhan Abdrakhmanov<sup>1</sup>, 
+          <strong>Vadim Atlassov</strong><sup>1</sup> <span style="background: #fef3c7; color: #92400e; font-size: 0.75em; padding: 2px 6px; border-radius: 4px; font-weight: 600; margin-left: 4px;">Core Contributor</span>, 
+          Isabella Schlattner<sup>1</sup>, 
+          Dongho Kim<sup>2</sup>, 
+          Hyunjin Ju<sup>2,*</sup>
+          <br>
+          <span style="font-size: 0.82em; color: var(--text-muted, #6b7280); margin-top: 4px; display: inline-block;">
+            <sup>1</sup> Nazarbayev University &nbsp;|&nbsp; <sup>2</sup> Hankyong National University &nbsp;|&nbsp; <sup>*</sup> Corresponding Author
+          </span>
+        </p>
+        <p style="font-size: 0.9em; margin-bottom: 14px; color: var(--text-muted, #4b5563); font-style: italic;">
+          <strong>My Contribution:</strong> Led the curation of the 572-image dataset, designed the multi-attribute annotation schema, executed all baseline model evaluations (ViT, Qwen3-VL), and managed the Zenodo repository deployment.
+        </p>
         <p>
           <strong>Dataset Overview:</strong> 572 annotated images of RC beam–column joint failures with expert-verified multi-attribute annotations for structural damage recognition, vision–language modeling, and generative modeling.
         </p>
