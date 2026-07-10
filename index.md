@@ -377,6 +377,28 @@
   </div>
   <div class="paper">
     <div style="display: flex; gap: 24px; align-items: flex-start;">
+      <img class="paper-preview" src="assets/recon_preview.png" alt="recon image-to-text report generation preview">
+      <div style="flex: 1;">
+        <div class="paper-title">RECON: A Vision-Language Model for Automated Damage Assessment and Reporting of
+RC Beam–Column Joints</div>
+        <div class="paper-venue">In Progress</div>
+        <p>
+          <strong>Quantitative Results:</strong> Evaluated on a custom dataset of 572 RC beam–column joint images, RECON achieves state-of-the-art structured field prediction with <strong>80.9% mean accuracy</strong> and <strong>65.6% macro F1-score</strong> and METEOR <strong>0.4293</strong>, significantly outperforming recent VLM baselines (InternVL3-8B, Qwen3.5-VL) in all report generation (NLGM) and form parsing (FPM) metrics.
+        </p>
+        <p>
+          <strong>Engineering Utility:</strong> The framework automates structural inspection by generating both fine-grained diagnostic fields (joint type, failure mechanism, damage severity) and comprehensive free-form expert reports, supported by evidence-grounded attention visualization.
+        </p>
+        <p>
+          <strong>Expert Validation:</strong> Assessed by three structural engineering experts and an automated GPT-4o "LLM-as-a-Judge" framework, the generated reports achieved an average score of 3.45/5.0 in visual grounding, 3.5/5.0 in technical completeness, and <strong>4.24/5.0</strong> in terminology precision.
+        </p>
+        <div class="paper-links">
+          <a href="https://github.com/Vadim-ATL/RECON/tree/main" target="_blank" rel="noopener">Code</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="paper">
+    <div style="display: flex; gap: 24px; align-items: flex-start;">
       <img class="paper-preview" src="assets/rc_bcj_dataset_preview.png" alt="RC-BCJ-Dataset preview">
       <div style="flex: 1;">
         <div class="paper-title">RC-BCJ-Dataset: A Benchmark Image Dataset of Reinforced Concrete Beam–Column Joint Failures</div>
