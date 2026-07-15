@@ -382,10 +382,10 @@
           </span>
         </p>
         <p style="font-size: 0.9em; margin-bottom: 14px; color: var(--text-muted, #4b5563); font-style: italic;">
-          <strong>My Contribution:</strong> Co-designed the Scalable Interpolant Transformer (SiT) architecture, implemented the latent-alignment mechanism, and conducted all MIMIC-CXR training and evaluation experiments.
+          <strong>My Contribution:</strong> Designed and implemented the latent-alignment mechanism (structured anatomy–pathology latent representation and latent-to-spatial decoder), fine-tuned the Scalable Interpolant Transformer (SiT) backbone on MIMIC-CXR, and developed the pathology inpainting, severity-conditioned counterfactual generation (regression-progression), and anatomic control generation pipelines, along with the corresponding evaluation.
         </p>
         <p>
-          <strong>Quantitative Results:</strong> On the <a href="https://physionet.org/content/mimic-cxr/2.1.0/" style="color: inherit; text-decoration: none;">MIMIC-CXR</a> dataset, the model achieved <abbr title="Fréchet Inception Distance">FID</abbr> 45.38, MS-SSIM 0.736, and Dice 0.6564, outperforming RoentGen, CheXGen, and XReal baselines.
+          <strong>Quantitative Results:</strong> On the <a href="https://physionet.org/content/mimic-cxr/2.1.0/" style="color: inherit; text-decoration: none;">MIMIC-CXR</a> dataset, the model achieved <abbr title="Fréchet Inception Distance">FID</abbr> 45.38, MS-SSIM 0.736, and DICE 0.6564, outperforming RoentGen, CheXGen, and XReal baselines.
         </p>
         <p>
           <strong>Clinical Utility:</strong> Synthetic augmentation improved downstream pneumonia classification accuracy by 17.5% and AUC by 4.2%.
@@ -440,7 +440,7 @@ RC Beam–Column Joints</div>
           </span>
         </p>
         <p style="font-size: 0.9em; margin-bottom: 14px; color: var(--text-muted, #4b5563); font-style: italic;">
-          <strong>My Contribution:</strong> Led the curation of the 572-image dataset, designed the multi-attribute annotation schema, executed all baseline model evaluations (ViT, Qwen3-VL), and managed the Zenodo repository deployment.
+          <strong>My Contribution:</strong> Led the curation of the 572-image dataset, designed the multi-attribute annotation schema, and managed the Zenodo repository deployment. Implemented and evaluated all baseline models across the three benchmark tasks — failure-mode classification (ResNet, EfficientNet, ViT, Swin, DINOv2/v3), image-to-text report generation (BLIP, BLIP-2, Gemma-3, Qwen2.5-VL, Qwen3-VL), and conditional image generation (Pix2Pix, CycleGAN, WGAN-GP, LDM, ControlNet) — and conducted the corresponding performance evaluation.
         </p>
         <p>
           <strong>Dataset Overview:</strong> 572 annotated images of RC beam–column joint failures with expert-verified multi-attribute annotations for structural damage recognition, vision–language modeling, and generative modeling.
