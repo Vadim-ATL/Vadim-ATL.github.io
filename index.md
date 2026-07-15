@@ -108,7 +108,6 @@
     padding: 24px;
     box-shadow: 0 1px 3px rgba(0,0,0,0.04);
     transition: box-shadow 0.2s ease, transform 0.15s ease;
-    cursor: pointer;
   }
 
   .cv-page .paper:hover {
@@ -328,7 +327,7 @@
 </div>
   </div>
   <h2 id="publications">Publications &amp; Preprints</h2>
-    <div class="paper" data-href="https://doi.org/10.1016/j.jobe.2026.116466" tabindex="0" role="link" aria-label="Open paper: Controllable Diffusion-Based Image Generation for Failure Diagnosis of Reinforced Concrete Beam–Column Joints" onclick="handlePaperClick(event)" onkeydown="if(event.key==='Enter') handlePaperClick(event)">
+    <div class="paper">
     <div style="display: flex; gap: 24px; align-items: flex-start;">
       <img class="paper-preview" src="assets/jbe_preview.png" alt="RC joint failure generation preview">
       <div style="flex: 1;">
@@ -366,7 +365,7 @@
       </div>
     </div>
   </div>
-    <div class="paper" data-href="https://github.com/nubcico/XrayGen/tree/main" tabindex="0" role="link" aria-label="Open repository: Latent-Aligned Scalable Interpolant Transformer for Controllable Chest X-ray Synthesis" onclick="handlePaperClick(event)" onkeydown="if(event.key==='Enter') handlePaperClick(event)">
+    <div class="paper">
     <div style="display: flex; gap: 24px; align-items: flex-start;">
       <img class="paper-preview" src="assets/cxr_preview.png" alt="Chest X-ray synthesis preview">
       <div style="flex: 1;">
@@ -400,7 +399,7 @@
       </div>
     </div>
   </div>
-  <div class="paper" data-href="https://github.com/Vadim-ATL/RECON/tree/main" tabindex="0" role="link" aria-label="Open repository: RECON Vision-Language Model" onclick="handlePaperClick(event)" onkeydown="if(event.key==='Enter') handlePaperClick(event)">
+  <div class="paper">
     <div style="display: flex; gap: 24px; align-items: flex-start;">
       <img class="paper-preview" src="assets/recon_preview.png" alt="recon image-to-text report generation preview">
       <div style="flex: 1;">
@@ -422,7 +421,7 @@ RC Beam–Column Joints</div>
       </div>
     </div>
   </div>
-    <div class="paper" data-href="https://zenodo.org/records/20268086" tabindex="0" role="link" aria-label="Open dataset: RC-BCJ-Dataset on Zenodo" onclick="handlePaperClick(event)" onkeydown="if(event.key==='Enter') handlePaperClick(event)">
+    <div class="paper">
     <div style="display: flex; gap: 24px; align-items: flex-start;">
       <img class="paper-preview" src="assets/rc_bcj_dataset_preview.png" alt="RC-BCJ-Dataset preview">
       <div style="flex: 1;">
@@ -512,15 +511,3 @@ RC Beam–Column Joints</div>
     </div>
   </div>
 </div>
-
-<script>
-  // Makes an entire .paper card clickable, opening its data-href in a new tab.
-  // Clicks on links/buttons inside the card (Code, Paper, Dataset) still behave
-  // normally and do not trigger the card-level navigation.
-  function handlePaperClick(event) {
-    if (event.target.closest('a')) return;
-    const card = event.currentTarget;
-    const url = card.getAttribute('data-href');
-    if (url) window.open(url, '_blank', 'noopener,noreferrer');
-  }
-</script>
