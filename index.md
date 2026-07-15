@@ -306,7 +306,7 @@
   <p class="bio">
     MSc Researcher at the <strong>HCI Lab</strong>, Nazarbayev University, supervised by
     <strong><a href="https://scholar.google.com/citations?user=ipi5AVsAAAAJ&hl=ko">Prof. Minho Lee</a></strong>.
-    Research focus: <strong>physically-grounded generative AI</strong> for medicine and civil engineering.
+    Research focus: <strong>physically-grounded generative AI</strong> for medicine and structural engineering.
   </p>
 
   <div class="phd-status">
