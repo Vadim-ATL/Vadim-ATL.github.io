@@ -1,513 +1,96 @@
-<style>
-  .cv-page {
-    font-size: 16px;
-    line-height: 1.65;
-    color: var(--text, #1a1a1a);
-    max-width: 100%;
-  }
-
-  .cv-page h1 {
-    font-size: 2.4em;
-    margin: 0 0 10px 0;
-    letter-spacing: -0.03em;
-    font-weight: 700;
-    line-height: 1.15;
-  }
-
-  .cv-page h2 {
-    font-size: 1.3em;
-    margin-top: 48px;
-    margin-bottom: 20px;
-    padding-bottom: 10px;
-    border-bottom: 1.5px solid var(--border, #e5e7eb);
-    letter-spacing: -0.01em;
-    font-weight: 600;
-    color: var(--text, #1a1a1a);
-  }
-
-  .cv-page .profile-header {
-    display: flex;
-    gap: 36px;
-    align-items: flex-start;
-    margin-bottom: 32px;
-  }
-
-  .cv-page .profile-photo {
-    width: 160px;
-    height: 160px;
-    object-fit: cover;
-    border-radius: 10px;
-    flex-shrink: 0;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
-  }
-
-  .cv-page .profile-info {
-    flex: 1;
-  }
-
-  .cv-page .bio {
-    font-size: 1.05em;
-    line-height: 1.7;
-    margin-bottom: 18px;
-    color: var(--text, #1a1a1a);
-  }
-
-  .cv-page .phd-status {
-    border-left: 3px solid var(--link, #2563eb);
-    padding-left: 18px;
-    margin: 22px 0;
-    background: var(--panel, #f3f4f6);
-    padding: 16px 18px 16px 18px;
-    border-radius: 0 8px 8px 0;
-  }
-
-  .cv-page .phd-status > strong:first-child {
-    display: block;
-    margin-bottom: 10px;
-    font-size: 1.05em;
-  }
-
-  .cv-page .skills-list {
-    font-size: 0.95em;
-    margin-top: 10px;
-    padding-left: 20px;
-  }
-
-  .cv-page .skills-list li {
-    margin-bottom: 8px;
-    line-height: 1.55;
-  }
-
-  .cv-page .contact {
-    margin-top: 18px;
-    display: flex;
-    gap: 20px;
-    flex-wrap: wrap;
-  }
-
-  .cv-page .contact a {
-    text-decoration: none;
-    font-weight: 500;
-    font-size: 0.95em;
-    color: var(--link, #2563eb);
-    transition: color 0.15s ease;
-  }
-
-  .cv-page .contact a:hover {
-    text-decoration: underline;
-    color: var(--link-hover, #1d4ed8);
-  }
-
-  /* Paper styling */
-  .cv-page .paper {
-    margin-bottom: 36px;
-    padding-bottom: 0;
-    background: var(--card-bg, #ffffff);
-    border: 1px solid var(--border, #e5e7eb);
-    border-radius: 10px;
-    padding: 24px;
-    box-shadow: 0 1px 3px rgba(0,0,0,0.04);
-    transition: box-shadow 0.2s ease, transform 0.15s ease;
-  }
-
-  .cv-page .paper:hover {
-    box-shadow: 0 4px 16px rgba(0,0,0,0.06);
-    transform: translateY(-1px);
-  }
-
-  .cv-page .paper-title {
-    font-size: 1.1em;
-    font-weight: 700;
-    margin-bottom: 6px;
-    line-height: 1.35;
-    color: var(--text, #1a1a1a);
-  }
-
-  .cv-page .paper-venue {
-    font-size: 0.92em;
-    color: var(--text-muted, #6b7280);
-    margin-bottom: 14px;
-    font-style: italic;
-  }
-
-  .cv-page .paper p {
-    font-size: 0.95em;
-    margin: 0 0 10px 0;
-    line-height: 1.6;
-  }
-
-  .cv-page .paper ul {
-    font-size: 0.95em;
-    margin-top: 6px;
-    margin-bottom: 14px;
-    padding-left: 20px;
-  }
-
-  .cv-page .paper ul li {
-    margin-bottom: 5px;
-    line-height: 1.5;
-  }
-
-  .cv-page .paper-links {
-    margin-top: 14px;
-    font-size: 0.9em;
-    padding-top: 12px;
-    border-top: 1px solid var(--border, #e5e7eb);
-  }
-
-  .cv-page .paper-links a {
-    text-decoration: none;
-    font-weight: 500;
-    color: var(--link, #2563eb);
-    transition: color 0.15s ease;
-  }
-
-  .cv-page .paper-links a:hover {
-    text-decoration: underline;
-    color: var(--link-hover, #1d4ed8);
-  }
-
-  .cv-page .link-separator {
-    color: var(--text-muted, #d1d5db);
-    margin: 0 10px;
-    font-weight: 300;
-  }
-
-  .cv-page .news-item {
-    display: flex;
-    gap: 18px;
-    margin-bottom: 16px;
-    font-size: 0.95em;
-    align-items: baseline;
-    padding: 10px 0;
-    border-bottom: 1px solid var(--border, #f0f0f0);
-  }
-
-  .cv-page .news-item:last-child {
-    border-bottom: none;
-  }
-
-  .cv-page .news-date {
-    min-width: 90px;
-    color: var(--text-muted, #6b7280);
-    font-size: 0.88em;
-    flex-shrink: 0;
-    font-weight: 500;
-    font-variant-numeric: tabular-nums;
-  }
-
-  .cv-page .project {
-    margin-bottom: 24px;
-    background: var(--card-bg, #ffffff);
-    border: 1px solid var(--border, #e5e7eb);
-    border-radius: 10px;
-    padding: 24px;
-    box-shadow: 0 1px 3px rgba(0,0,0,0.04);
-    transition: box-shadow 0.2s ease, transform 0.15s ease;
-  }
-
-  .cv-page .project:hover {
-    box-shadow: 0 4px 16px rgba(0,0,0,0.06);
-    transform: translateY(-1px);
-  }
-
-  .cv-page .project-title {
-    font-size: 1.05em;
-    font-weight: 700;
-    margin-bottom: 8px;
-  }
-
-  .cv-page .project-title a {
-    text-decoration: none;
-    color: var(--link, #2563eb);
-    transition: color 0.15s ease;
-  }
-
-  .cv-page .project-title a:hover {
-    text-decoration: underline;
-    color: var(--link-hover, #1d4ed8);
-  }
-
-  .cv-page .project p {
-    font-size: 0.95em;
-    margin: 0 0 14px 0;
-    line-height: 1.6;
-    color: var(--text, #1a1a1a);
-  }
-
-  .cv-page .tag {
-    font-size: 0.78em;
-    color: var(--text-muted, #6b7280);
-    background: var(--tag-bg, #e5e7eb);
-    padding: 4px 10px;
-    border-radius: 4px;
-    margin-right: 6px;
-    display: inline-block;
-    font-weight: 500;
-    letter-spacing: 0.01em;
-  }
-
-  .cv-page ul {
-    padding-left: 20px;
-  }
-
-  .cv-page li {
-    margin-bottom: 8px;
-    line-height: 1.6;
-  }
-
-  /* Paper preview image */
-  .cv-page .paper-preview {
-    width: 170px;
-    height: 170px;
-    object-fit: cover;
-    border-radius: 8px;
-    flex-shrink: 0;
-    box-shadow: 0 2px 6px rgba(0,0,0,0.08);
-  }
-
-  @media (max-width: 640px) {
-    .cv-page .profile-header {
-      flex-direction: column;
-      gap: 20px;
-      align-items: center;
-      text-align: center;
-    }
-    .cv-page .contact {
-      justify-content: center;
-    }
-    .cv-page .phd-status {
-      text-align: left;
-    }
-    .cv-page .paper {
-      padding: 18px;
-    }
-    .cv-page .project {
-      padding: 18px;
-    }
-    .cv-page h1 {
-      font-size: 2em;
-    }
-    .cv-page .paper-preview {
-      width: 100%;
-      height: 200px;
-      margin-bottom: 16px;
-    }
-    .cv-page .paper > div:first-child {
-      flex-direction: column !important;
-    }
-  }
-</style>
-<div class="cv-page">
-  <div class="profile-header">
-    <img class="profile-photo" src="assets/personal_photo.png" alt="Vadim Atlassov">
-<div class="profile-info">
-  <h1>Vadim Atlassov</h1>
-  <p class="bio">
-    MSc Researcher at the <strong>HCI Lab</strong>, Nazarbayev University, supervised by
-    <strong><a href="https://scholar.google.com/citations?user=ipi5AVsAAAAJ&hl=ko">Prof. Minho Lee</a></strong>.
-    Research focus: <strong>physically-grounded generative AI</strong> for medicine and structural engineering.
-  </p>
-
-  <div class="phd-status">
-    <strong>Actively seeking PhD positions.</strong> Research interests include:
-    <ul class="skills-list">
-      <li><strong>Generative AI:</strong> Latent Diffusion (LDM), Flow Matching, Latent Disentanglement, Spatial-Latent Alignment.</li>
-      <li><strong>Multimodal Learning:</strong> Vision-Language Models (VLM), Mixture-of-Experts (MoE) Adapters, DINOv2, Semantic Grounding.</li>
-      <li><strong>Domain Applications:</strong> Medical Imaging (Chest X-ray, Mammography), AI for Structural Health Monitoring (RC Beam Failure Diagnosis).</li>
-    </ul>
-  </div>
-
-  <div class="contact">
-    <a href="https://www.linkedin.com/in/vadim-atlassov">LinkedIn</a>
-    <a href="mailto:vadim.atlassov@nu.edu.kz">Email</a>
-    <a href="https://github.com/Vadim-ATL">GitHub</a>
-    <a href="https://scholar.google.com/citations?hl=ko&user=1IG1kf0AAAAJ">Scholar</a>
-  </div>
-</div>
-  </div>
-  <h2 id="publications">Publications &amp; Preprints</h2>
-    <div class="paper">
-    <div style="display: flex; gap: 24px; align-items: flex-start;">
-      <img class="paper-preview" src="assets/jbe_preview.png" alt="RC joint failure generation preview">
-      <div style="flex: 1;">
-        <div class="paper-title">Controllable Diffusion-Based Image Generation for Failure Diagnosis of Reinforced Concrete Beam–Column Joints</div>
-        <div class="paper-venue">Journal of Building Engineering, Vol. 128 (2026) 116466 — Elsevier, IF 7.4, Q1 — <strong>Accepted</strong></div>
-        <p style="font-size: 0.92em; margin-bottom: 14px; line-height: 1.6; color: var(--text, #1a1a1a);">
-          <strong>Vadim Atlassov</strong><sup>1</sup> <span style="background: #dbeafe; color: #1e40af; font-size: 0.75em; padding: 2px 6px; border-radius: 4px; font-weight: 600; margin-left: 4px;">Lead Author</span>, 
-          Isabella Schlattner<sup>1</sup>, 
-          Yelzhas Omarov<sup>1</sup>, 
-          Hyunjin Ju<sup>2</sup>, 
-          Min-Ho Lee<sup>1</sup>
-          <br>
-          <span style="font-size: 0.82em; color: var(--text-muted, #6b7280); margin-top: 4px; display: inline-block;">
-            <sup>1</sup> Nazarbayev University &nbsp;|&nbsp; <sup>2</sup> Hankyong National University
-          </span>
-        </p>
-        <p>
-          <strong>Quantitative Results:</strong> The model demonstrated high fidelity and structural consistency, achieving a <abbr title="Kernel Inception Distance">KID</abbr> of 0.0628 and <abbr title="Structural Similarity Index">SSIM</abbr> of 0.790, outperforming ControlNet, CycleGAN, and Pix2Pix baselines.
-        </p>
-        <p><strong>Diagnostic Accuracy Gains:</strong></p>
-        <ul>
-          <li>Failure-Type Classification: <strong>+5.2%</strong> (to 85.8%)</li>
-          <li>Rebar Exposure Detection: <strong>+11.9%</strong> (to 95.2%)</li>
-          <li>Flexural Cracking Detection: <strong>+12.9%</strong> (to 84.3%)</li>
-          <li>Concrete Spalling Detection: <strong>+11.5%</strong> (to 85.3%)</li>
-        </ul>
-        <p>
-          <strong>Expert Validation:</strong> Structural Realism: 4.12/5 (N=5 structural engineers); Assessment Clarity: 3.98/5.
-        </p>
-        <div class="paper-links">
-          <a href="https://github.com/nubcico/GenBeamJoint" target="_blank" rel="noopener">Code</a>
-          <span class="link-separator">|</span>
-          <a href="https://doi.org/10.1016/j.jobe.2026.116466" target="_blank" rel="noopener">Paper</a>
-        </div>
-      </div>
+---
+layout: default
+---
+<header class="profile" id="about">
+  <div>
+    <h1>Vadim Atlassov</h1>
+    <p>I am an MSc researcher in the HCI Lab at Nazarbayev University, supervised by <a href="https://scholar.google.com/citations?user=ipi5AVsAAAAJ&amp;hl=ko">Prof. Minho Lee</a>.</p>
+    <p id="research">I work on generative models and multimodal learning for computer vision, with a focus on controllable image generation and latent alignment. I study diffusion models, flow matching, and vision-language models (VLMs). Medical imaging and structural engineering are application domains for this work.</p>
+    <p class="status">Actively seeking PhD positions.</p>
+    <div class="contact" aria-label="Contact and profiles">
+      <a href="https://raw.githubusercontent.com/Vadim-ATL/Vadim-ATL/main/CV.pdf">CV</a>
+      <a href="https://scholar.google.com/citations?hl=ko&amp;user=1IG1kf0AAAAJ">Google Scholar</a>
+      <a href="https://github.com/Vadim-ATL">GitHub</a>
+      <a href="mailto:vadim.atlassov@nu.edu.kz">Email</a>
+      <a href="https://www.linkedin.com/in/vadim-atlassov">LinkedIn</a>
     </div>
   </div>
-    <div class="paper">
-    <div style="display: flex; gap: 24px; align-items: flex-start;">
-      <img class="paper-preview" src="assets/cxr_preview.png" alt="Chest X-ray synthesis preview">
-      <div style="flex: 1;">
-        <div class="paper-title">Latent-Aligned Scalable Interpolant Transformer for Controllable Chest X-ray Synthesis</div>
-        <div class="paper-venue">Computerized Medical Imaging and Graphics (CMIG), 2025 — Under Review</div>
-          <p style="font-size: 0.92em; margin-bottom: 14px; line-height: 1.6; color: var(--text, #1a1a1a);">
-          Isabella Schlattner<sup>1</sup>, 
-          <strong>Vadim Atlassov</strong><sup>1</sup> <span style="background: #fef3c7; color: #92400e; font-size: 0.75em; padding: 2px 6px; border-radius: 4px; font-weight: 600; margin-left: 4px;">Core Contributor</span>, 
-          Azimzhan Abdrakhmanov<sup>1</sup>, 
-          Minho Lee<sup>1</sup>
-          <br>
-          <span style="font-size: 0.82em; color: var(--text-muted, #6b7280); margin-top: 4px; display: inline-block;">
-            <sup>1</sup> Nazarbayev University
-          </span>
-        </p>
-        <p style="font-size: 0.9em; margin-bottom: 14px; color: var(--text-muted, #4b5563); font-style: italic;">
-          <strong>My Contribution:</strong> Designed and implemented the latent-alignment mechanism (structured anatomy–pathology latent representation and latent-to-spatial decoder), fine-tuned the Scalable Interpolant Transformer (SiT) backbone on MIMIC-CXR, and developed the pathology inpainting, severity-conditioned counterfactual generation (regression-progression), and anatomic control generation pipelines, along with the corresponding evaluation.
-        </p>
-        <p>
-          <strong>Quantitative Results:</strong> On the <a href="https://physionet.org/content/mimic-cxr/2.1.0/" style="color: inherit; text-decoration: none;">MIMIC-CXR</a> dataset, the model achieved <abbr title="Fréchet Inception Distance">FID</abbr> 45.38, MS-SSIM 0.736, and DICE 0.6564, outperforming RoentGen, CheXGen, and XReal baselines.
-        </p>
-        <p>
-          <strong>Clinical Utility:</strong> Synthetic augmentation improved downstream pneumonia classification accuracy by 17.5% and AUC by 4.2%.
-        </p>
-        <p>
-          <strong>Radiologist Validation:</strong> Anatomical plausibility 3.8/5; pathology expression 3.95/5.
-        </p>
-        <div class="paper-links">
-          <a href="https://github.com/nubcico/XrayGen/tree/main" target="_blank" rel="noopener">Code</a>
-        </div>
-      </div>
+  <img class="profile-photo" src="assets/personal_photo.png" width="170" height="170" alt="Vadim Atlassov">
+</header>
+
+<section aria-labelledby="publications">
+  <h2 id="publications">Publications &amp; manuscripts</h2>
+  <article class="entry">
+    <a class="preview" href="assets/jbe_preview.png" aria-label="View the full GenBeamJoint architecture diagram"><img src="assets/jbe_preview.png" width="1135" height="356" alt="Conditional and denoising U-Nets for controllable joint-failure generation"></a>
+    <div>
+      <h3><a href="https://doi.org/10.1016/j.jobe.2026.116466">Controllable Diffusion-Based Image Generation for Failure Diagnosis of Reinforced Concrete Beam–Column Joints</a></h3>
+      <p class="authors"><strong>Vadim Atlassov</strong>, Isabella Schlattner, Yelzhas Omarov, Hyunjin Ju, Min-Ho Lee</p>
+      <p class="venue"><em>Journal of Building Engineering</em>, 128, 116466, 2026 · Accepted · <strong>First author</strong></p>
+      <p class="contribution">I developed controllable diffusion for generating structural damage images. Synthetic training data improved failure diagnosis across four classification tasks.</p>
+      <p class="links"><a href="https://doi.org/10.1016/j.jobe.2026.116466">Paper</a><a href="https://github.com/nubcico/GenBeamJoint">Code</a></p>
     </div>
-  </div>
-  <div class="paper">
-    <div style="display: flex; gap: 24px; align-items: flex-start;">
-      <img class="paper-preview" src="assets/recon_preview.png" alt="recon image-to-text report generation preview">
-      <div style="flex: 1;">
-        <div class="paper-title">RECON: A Vision-Language Model for Automated Damage Assessment and Reporting of
-RC Beam–Column Joints</div>
-        <div class="paper-venue">In Progress</div>
-        <p>
-          <strong>Quantitative Results:</strong> Evaluated on a custom dataset of 572 RC beam–column joint images, RECON achieves state-of-the-art structured field prediction with <strong>80.9% mean accuracy</strong> and <strong>65.6% macro F1-score</strong> and METEOR <strong>0.4293</strong>, significantly outperforming recent VLM baselines (InternVL3-8B, Qwen3.5-VL) in all report generation (NLGM) and form parsing (FPM) metrics.
-        </p>
-        <p>
-          <strong>Engineering Utility:</strong> The framework automates structural inspection by generating both fine-grained diagnostic fields (joint type, failure mechanism, damage severity) and comprehensive free-form expert reports, supported by evidence-grounded attention visualization.
-        </p>
-        <p>
-          <strong>Expert Validation:</strong> Assessed by three structural engineering experts and an automated GPT-4o "LLM-as-a-Judge" framework, the generated reports achieved an average score of 3.45/5.0 in visual grounding, 3.5/5.0 in technical completeness, and <strong>4.24/5.0</strong> in terminology precision.
-        </p>
-        <div class="paper-links">
-          <a href="https://github.com/Vadim-ATL/RECON/tree/main" target="_blank" rel="noopener">Code</a>
-        </div>
-      </div>
+  </article>
+  <article class="entry">
+    <a class="preview" href="assets/cxr_preview.png" aria-label="View the full chest X-ray synthesis architecture"><img src="assets/cxr_preview.png" width="1099" height="684" alt="Anatomy–pathology latent alignment and Scalable Interpolant Transformer architecture"></a>
+    <div>
+      <h3>Latent-Aligned Scalable Interpolant Transformer for Controllable Chest X-ray Synthesis</h3>
+      <p class="authors">Isabella Schlattner, <strong>Vadim Atlassov</strong>, Azimzhan Abdrakhmanov, Minho Lee</p>
+      <p class="venue">Submitted to <em>Computerized Medical Imaging and Graphics</em>, 2025 · Under review</p>
+      <p class="contribution"><strong>Core technical contributor.</strong> I designed and implemented the anatomy–pathology latent alignment and latent-to-spatial decoder, fine-tuned SiT on <a href="https://physionet.org/content/mimic-cxr/2.1.0/">MIMIC-CXR</a>, and built and evaluated the inpainting, counterfactual, and anatomic control pipelines.</p>
+      <p class="links"><a href="https://github.com/nubcico/XrayGen/tree/main">Code</a></p>
     </div>
-  </div>
-    <div class="paper">
-    <div style="display: flex; gap: 24px; align-items: flex-start;">
-      <img class="paper-preview" src="assets/rc_bcj_dataset_preview.png" alt="RC-BCJ-Dataset preview">
-      <div style="flex: 1;">
-        <div class="paper-title">RC-BCJ-Dataset: A Benchmark Image Dataset of Reinforced Concrete Beam–Column Joint Failures</div>
-        <div class="paper-venue">Scientific Data (Nature Portfolio), 2026 — Under Review</div>
-          <p style="font-size: 0.92em; margin-bottom: 14px; line-height: 1.6; color: var(--text, #1a1a1a);">
-          Min-Ho Lee<sup>1</sup>, 
-          Azimzhan Abdrakhmanov<sup>1</sup>, 
-          <strong>Vadim Atlassov</strong><sup>1</sup> <span style="background: #fef3c7; color: #92400e; font-size: 0.75em; padding: 2px 6px; border-radius: 4px; font-weight: 600; margin-left: 4px;">Core Contributor</span>, 
-          Isabella Schlattner<sup>1</sup>, 
-          Dongho Kim<sup>2</sup>, 
-          Hyunjin Ju<sup>2,*</sup>
-          <br>
-          <span style="font-size: 0.82em; color: var(--text-muted, #6b7280); margin-top: 4px; display: inline-block;">
-            <sup>1</sup> Nazarbayev University &nbsp;|&nbsp; <sup>2</sup> Hankyong National University &nbsp;|&nbsp; <sup>*</sup> Corresponding Author
-          </span>
-        </p>
-        <p style="font-size: 0.9em; margin-bottom: 14px; color: var(--text-muted, #4b5563); font-style: italic;">
-          <strong>My Contribution:</strong> Led the curation of the 572-image dataset, designed the multi-attribute annotation schema, and managed the Zenodo repository deployment. Implemented and evaluated all baseline models across the three benchmark tasks — failure-mode classification (ResNet, EfficientNet, ViT, Swin, DINOv2/v3), image-to-text report generation (BLIP, BLIP-2, Gemma-3, Qwen2.5-VL, Qwen3-VL), and conditional image generation (Pix2Pix, CycleGAN, WGAN-GP, LDM, ControlNet) — and conducted the corresponding performance evaluation.
-        </p>
-        <p>
-          <strong>Dataset Overview:</strong> 572 annotated images of RC beam–column joint failures with expert-verified multi-attribute annotations for structural damage recognition, vision–language modeling, and generative modeling.
-        </p>
-        <p><strong>Annotations:</strong></p>
-        <ul>
-          <li><strong>Categorical labels:</strong> Joint type, failure mechanism (B / J / BJ), damage type, damage severity (DS0–DS4)</li>
-          <li><strong>1,716 expert-written diagnostic descriptions</strong> (3 per image) for image-to-text and multimodal learning</li>
-          <li><strong>Segmentation masks</strong> for background, beam, column, and joint-core regions</li>
-        </ul>
-        <p>
-          <strong>Baseline Results:</strong> Failure-mode classification up to 70.30% accuracy (ViT-B/16); best image-to-text generation (Qwen3-VL-4B): BLEU-4 0.82, BERTScore 0.98.
-        </p>
-        <div class="paper-links">
-          <a href="https://zenodo.org/records/20268086" target="_blank" rel="noopener">Dataset</a>
-          <span class="link-separator">|</span>
-          <a href="https://github.com/nubcico/RC-BCJ-Dataset" target="_blank" rel="noopener">Code</a>
-        </div>
-      </div>
+  </article>
+  <article class="entry">
+    <a class="preview" href="assets/rc_bcj_dataset_preview.png" aria-label="View the full RC-BCJ dataset example"><img src="assets/rc_bcj_dataset_preview.png" width="3298" height="1598" alt="Beam–column joint failure image with diagnostic annotations"></a>
+    <div>
+      <h3>RC-BCJ-Dataset: A Benchmark Image Dataset of Reinforced Concrete Beam–Column Joint Failures</h3>
+      <p class="authors">Min-Ho Lee, Azimzhan Abdrakhmanov, <strong>Vadim Atlassov</strong>, Isabella Schlattner, Dongho Kim, Hyunjin Ju</p>
+      <p class="venue">Submitted to <em>Scientific Data</em>, 2026 · Under review</p>
+      <p class="contribution">I led curation and annotation design for 572 images with diagnostic descriptions and segmentation masks. I implemented and evaluated the classification, image-to-text, and conditional generation baselines, including DINOv2/v3, VLMs, and diffusion models, and deployed the dataset on Zenodo.</p>
+      <p class="links"><a href="https://zenodo.org/records/20268086">Dataset</a><a href="https://github.com/nubcico/RC-BCJ-Dataset">Code</a></p>
     </div>
-  </div>
+  </article>
+</section>
+
+<section aria-labelledby="projects">
+  <h2 id="projects">Research projects</h2>
+  <p class="section-note">Current work and implementations.</p>
+  <article class="entry">
+    <a class="preview" href="assets/recon_preview.png" aria-label="View the full RECON report example"><img src="assets/recon_preview.png" width="1602" height="985" alt="RECON damage assessment with visual grounding and a generated report" loading="lazy"></a>
+    <div>
+      <h3><a href="https://github.com/Vadim-ATL/RECON/tree/main">RECON: A Vision-Language Model for Automated Damage Assessment and Reporting of RC Beam–Column Joints</a></h3>
+      <p class="venue">Work in progress</p>
+      <p class="contribution">A VLM combining DINOv2, field-aware Mixture-of-Experts, and a Q-Former to turn damage images into diagnostic fields and written reports. I study semantic grounding through attention visualizations and evaluate the reports against expert assessments.</p>
+      <p class="links"><a href="https://github.com/Vadim-ATL/RECON/tree/main">Code</a></p>
+    </div>
+  </article>
+  <article class="entry">
+    <a class="preview" href="assets/counterfactual_cxr_preview.png" aria-label="View the counterfactual chest X-ray example"><img src="assets/counterfactual_cxr_preview.png" width="220" height="220" alt="Chest X-ray example from the counterfactual generation project" loading="lazy"></a>
+    <div>
+      <h3><a href="https://github.com/Vadim-ATL/Counterfactual-CXR-Generation">Counterfactual Chest X-Ray Generation</a></h3>
+      <p class="contribution">Changing disease severity while preserving anatomy. I use SiT and disentangled spatial latents to generate progression and regression examples on MIMIC-CXR.</p>
+      <p class="links"><a href="https://github.com/Vadim-ATL/Counterfactual-CXR-Generation">Code</a></p>
+    </div>
+  </article>
+  <article class="entry">
+    <a class="preview" href="assets/bloodmnist_preview.png" aria-label="View generated blood cell samples"><img src="assets/bloodmnist_preview.png" width="138" height="138" alt="Grid of blood cell microscopy samples generated with a DDPM" loading="lazy"></a>
+    <div>
+      <h3><a href="https://github.com/Vadim-ATL/BloodMNIST-DDPM">BloodMNIST-DDPM</a></h3>
+      <p class="contribution">A diffusion model for blood cell microscopy synthesis, generating samples across eight cell types in BloodMNIST.</p>
+      <p class="links"><a href="https://github.com/Vadim-ATL/BloodMNIST-DDPM">Code</a></p>
+    </div>
+  </article>
+</section>
+
+<section aria-labelledby="news">
   <h2 id="news">News</h2>
-  <div class="news-item">
-    <span class="news-date">Jun 2026</span>
-    <span>Paper accepted at <strong>Journal of Building Engineering</strong> (Elsevier, IF 7.4, Q1) — controllable diffusion for RC structural failure diagnosis. <a href="https://doi.org/10.1016/j.jobe.2026.116466">DOI</a></span>
-  </div>
-  <div class="news-item">
-    <span class="news-date">2026</span>
-    <span>Benchmark dataset paper on RC beam-column joint failures submitted to <strong>Scientific Data</strong> (Nature Portfolio) — under review.</span>
-  </div>
-  <div class="news-item">
-    <span class="news-date">2025</span>
-    <span>Paper on latent-aligned diffusion for chest X-ray synthesis submitted to <strong>Computerized Medical Imaging and Graphics</strong> — Under review.</span>
-  </div>
-  <h2 id="projects">Projects</h2>
-  <div class="project">
-    <div style="display: flex; gap: 24px; align-items: flex-start;">
-      <img class="paper-preview" src="assets/counterfactual_cxr_preview.png" alt="Counterfactual CXR preview" style="width: 140px; height: 140px;">
-      <div style="flex: 1;">
-        <div class="project-title"><a href="https://github.com/Vadim-ATL/Counterfactual-CXR-Generation">Counterfactual Chest X-Ray Generation</a></div>
-        <p style="margin-top: 10px;">
-          Disentangled anatomy and diffusion transformers (SiT) for counterfactual disease trajectory generation in chest X-rays. Simulates realistic progression (Healthy → Sick) and regression (Sick → Healthy) while preserving patient identity via orthogonal spatial latents.
-        </p>
-        <div style="margin-top: 14px;">
-          <span class="tag">Medical Imaging</span>
-          <span class="tag">Diffusion Transformers</span>
-          <span class="tag">Counterfactual</span>
-          <span class="tag">MIMIC-CXR</span>
-        </div>
-      </div>
-    </div>
-  </div>
+  <dl class="news">
+    <dt>Jun 2026</dt><dd>My first-author paper on controllable diffusion was accepted in <em>Journal of Building Engineering</em>. <a href="https://doi.org/10.1016/j.jobe.2026.116466">Paper</a></dd>
+    <dt>2026</dt><dd>Our RC-BCJ benchmark dataset manuscript was submitted to <em>Scientific Data</em>.</dd>
+    <dt>2025</dt><dd>Our latent-aligned chest X-ray synthesis manuscript was submitted to <em>Computerized Medical Imaging and Graphics</em>.</dd>
+  </dl>
+</section>
 
-  <div class="project">
-    <div style="display: flex; gap: 24px; align-items: flex-start;">
-      <img class="paper-preview" src="assets/bloodmnist_preview.png" alt="BloodMNIST preview" style="width: 140px; height: 140px;">
-      <div style="flex: 1;">
-        <div class="project-title"><a href="https://github.com/Vadim-ATL/BloodMNIST-DDPM">BloodMNIST-DDPM</a></div>
-        <p style="margin-top: 10px;">
-          Diffusion model for synthesizing realistic blood cell microscopy images. Generates 8 cell types with clinically accurate morphology.
-        </p>
-        <div style="margin-top: 14px;">
-          <span class="tag">Medical Imaging</span>
-          <span class="tag">DDPM</span>
-          <span class="tag">Hematology</span>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
+<footer>
+  <p>For my academic background and research experience, see my <a href="https://raw.githubusercontent.com/Vadim-ATL/Vadim-ATL/main/CV.pdf">CV</a>. You can reach me at <a href="mailto:vadim.atlassov@nu.edu.kz">vadim.atlassov@nu.edu.kz</a>.</p>
+</footer>
