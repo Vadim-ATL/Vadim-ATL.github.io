@@ -8,7 +8,7 @@ layout: default
     <p id="research">I work on generative models and multimodal learning for computer vision, with a focus on controllable image generation and latent alignment. I study diffusion models, flow matching, and vision-language models (VLMs). Medical imaging and structural engineering are application domains for this work.</p>
     <p class="status">Actively seeking PhD positions.</p>
     <div class="contact" aria-label="Contact and profiles">
-      <a href="https://raw.githubusercontent.com/Vadim-ATL/Vadim-ATL/main/CV.pdf">CV</a>
+      <a href="https://github.com/Vadim-ATL/Vadim-ATL/blob/main/CV.pdf?raw=true" target="_blank" rel="noopener">CV</a>
       <a href="https://scholar.google.com/citations?hl=ko&amp;user=1IG1kf0AAAAJ">Google Scholar</a>
       <a href="https://github.com/Vadim-ATL">GitHub</a>
       <a href="mailto:vadim.atlassov@nu.edu.kz">Email</a>
