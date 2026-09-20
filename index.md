@@ -84,6 +84,10 @@ layout: default
 
 <section aria-labelledby="news">
   <h2 id="news">News</h2>
+  <div class="news">
+    <span class="news-date">30 Aug 2026</span>
+    <span>Passed <strong>IELTS Academic with an overall band score of 8.0</strong>.</span>
+  </div>
   <dl class="news">
     <dt>Jun 2026</dt><dd>My first-author paper on controllable diffusion was accepted in <em>Journal of Building Engineering</em>. <a href="https://doi.org/10.1016/j.jobe.2026.116466">Paper</a></dd>
     <dt>2026</dt><dd>Our RC-BCJ benchmark dataset manuscript was submitted to <em>Scientific Data</em>.</dd>
