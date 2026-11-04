@@ -85,6 +85,7 @@ layout: default
 <section aria-labelledby="news">
   <h2 id="news">News</h2>
   <dl class="news">
+    <dt>06 Oct 2026</dt><dd>My second-author paper "Latent-Aligned Scalable Interpolant Transformer for Controllable Chest X-ray Synthesis" was accepted in <em>Scientific Reports</em></dd>
     <dt>30 Aug 2026</dt><dd>Passed <strong>IELTS Academic with an overall band score of 8.0</strong>.</dd>
     <dt>Jun 2026</dt><dd>My first-author paper on controllable diffusion was accepted in <em>Journal of Building Engineering</em>. <a href="https://doi.org/10.1016/j.jobe.2026.116466">Paper</a></dd>
     <dt>2026</dt><dd>Our RC-BCJ benchmark dataset manuscript was submitted to <em>Scientific Data</em>.</dd>
