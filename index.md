@@ -89,7 +89,6 @@ layout: default
     <dt>30 Aug 2026</dt><dd>Passed <strong>IELTS Academic with an overall band score of 8.0</strong>.</dd>
     <dt>Jun 2026</dt><dd>My first-author paper on controllable diffusion was accepted in <em>Journal of Building Engineering</em>. <a href="https://doi.org/10.1016/j.jobe.2026.116466">Paper</a></dd>
     <dt>2026</dt><dd>Our RC-BCJ benchmark dataset manuscript was submitted to <em>Scientific Data</em>.</dd>
-    <dt>2025</dt><dd>Our latent-aligned chest X-ray synthesis manuscript was submitted to <em>Computerized Medical Imaging and Graphics</em>.</dd>
   </dl>
 </section>
 
