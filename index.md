@@ -35,7 +35,7 @@ layout: default
     <div>
       <h3>Latent-Aligned Scalable Interpolant Transformer for Controllable Chest X-ray Synthesis</h3>
       <p class="authors">Isabella Schlattner, <strong>Vadim Atlassov</strong>, Azimzhan Abdrakhmanov, Minho Lee</p>
-      <p class="venue">Submitted to <em>Computerized Medical Imaging and Graphics</em>, 2025 · Under review</p>
+      <p class="venue">Submitted to <em>Scientific Reports</em>, 2026 · Accepted</p>
       <p class="contribution"><strong>Core technical contributor.</strong> I designed and implemented the anatomy–pathology latent alignment and latent-to-spatial decoder, fine-tuned SiT on <a href="https://physionet.org/content/mimic-cxr/2.1.0/">MIMIC-CXR</a>, and built and evaluated the inpainting, counterfactual, and anatomic control pipelines.</p>
       <p class="links"><a href="https://github.com/nubcico/XrayGen/tree/main">Code</a></p>
     </div>
