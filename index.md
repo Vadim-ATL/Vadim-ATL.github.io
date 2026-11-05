@@ -37,8 +37,7 @@ layout: default
       <p class="authors">Isabella Schlattner, <strong>Vadim Atlassov</strong>, Azimzhan Abdrakhmanov, Minho Lee</p>
       <p class="venue">Submitted to <em>Scientific Reports</em>, 2026 · Accepted</p>
       <p class="contribution"><strong>Core technical contributor.</strong> I designed and implemented the anatomy–pathology latent alignment and latent-to-spatial decoder, fine-tuned SiT on <a href="https://physionet.org/content/mimic-cxr/2.1.0/">MIMIC-CXR</a>, and built and evaluated the inpainting, counterfactual, and anatomic control pipelines.</p>
-      <p class="links"><a href="https://doi.org/10.1038/s41598-026-75231-7">Paper</a>
-      <p class="links"><a href="https://github.com/nubcico/XrayGen/tree/main">Code</a></p>
+      <p class="links"><a href="https://doi.org/10.1038/s41598-026-75231-7">Paper</a><a href="https://github.com/nubcico/XrayGen/tree/main">Code</a></p>
     </div>
   </article>
   <article class="entry">
